@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="QA Brains E-Commerce - Automation Suite" verbose="1">
+
+    <!-- ════════════════════════════════════════════════════════ -->
+    <!-- Global Listeners                                        -->
+    <!-- ════════════════════════════════════════════════════════ -->
+    <listeners>
+        <listener class-name="com.qabrains.utils.TestListener"/>
+    </listeners>
+
+    <!-- ════════════════════════════════════════════════════════ -->
+    <!-- LOGIN MODULE                                            -->
+    <!-- ════════════════════════════════════════════════════════ -->
+    <test name="Login Page Tests">
+        <classes>
+            <class name="com.qabrains.tests.login.LoginTests"/>
+        </classes>
+    </test>
+
+    <!-- ════════════════════════════════════════════════════════ -->
+    <!-- HOME PAGE MODULE (Add when ready)                       -->
+    <!-- ════════════════════════════════════════════════════════ -->
+    <!--
+    <test name="Home Page Tests">
+        <classes>
+            <class name="com.qabrains.tests.home.HomeTests"/>
+        </classes>
+    </test>
+    -->
+
+    <!-- ════════════════════════════════════════════════════════ -->
+    <!-- PRODUCT DETAILS MODULE (Add when ready)                 -->
+    <!-- ════════════════════════════════════════════════════════ -->
+    <!--
+    <test name="Product Details Page Tests">
+        <classes>
+            <class name="com.qabrains.tests.productdetails.ProductDetailsTests"/>
+        </classes>
+    </test>
+    -->
+
+    <!-- ════════════════════════════════════════════════════════ -->
+    <!-- CART MODULE (Add when ready)                            -->
+    <!-- ════════════════════════════════════════════════════════ -->
+    <!--
+    <test name="Cart Page Tests">
+        <classes>
+            <class name="com.qabrains.tests.cart.CartTests"/>
+        </classes>
+    </test>
+    -->
+
+    <!-- ════════════════════════════════════════════════════════ -->
+    <!-- CHECKOUT INFO MODULE (Add when ready)                   -->
+    <!-- ════════════════════════════════════════════════════════ -->
+    <!--
+    <test name="Checkout Info Page Tests">
+        <classes>
+            <class name="com.qabrains.tests.checkoutinfo.CheckoutInfoTests"/>
+        </classes>
+    </test>
+    -->
+
+    <!-- ════════════════════════════════════════════════════════ -->
+    <!-- CHECKOUT OVERVIEW MODULE (Add when ready)               -->
+    <!-- ════════════════════════════════════════════════════════ -->
+    <!--
+    <test name="Checkout Overview Page Tests">
+        <classes>
+            <class name="com.qabrains.tests.checkoutoverview.CheckoutOverviewTests"/>
+        </classes>
+    </test>
+    -->
+
+    <!-- ════════════════════════════════════════════════════════ -->
+    <!-- CHECKOUT COMPLETE MODULE (Add when ready)               -->
+    <!-- ════════════════════════════════════════════════════════ -->
+    <!--
+    <test name="Checkout Complete Page Tests">
+        <classes>
+            <class name="com.qabrains.tests.checkoutcomplete.CheckoutCompleteTests"/>
+        </classes>
+    </test>
+    -->
+
+</suite>
