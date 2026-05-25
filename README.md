@@ -1,14 +1,10 @@
-# QA-Brains-Ecommerce
+# QA Brains E-Commerce — Playwright Automation Project
 
-Initial scaffold for a Playwright e-commerce automation framework.
-
-## Project Structure
-
-- `src/main/java/com/qabrains/base/BaseTest.java`
-- `src/main/java/com/qabrains/config/AppConfig.java`
-- `src/main/java/com/qabrains/pages/login/LoginPage.java`
-- `src/main/java/com/qabrains/utils/BrowserFactory.java`
-- `src/main/java/com/qabrains/utils/TestListener.java`
-- `src/test/java/com/qabrains/tests/login/LoginTests.java`
-- `src/test/resources/testng.xml`
-
+## 🛠 Tech Stack
+| Technology   | Version   | Purpose                    |
+|-------------|-----------|----------------------------|
+| Java         | 17+       | Programming Language       |
+| Playwright   | 1.48.0    | Browser Automation         |
+| TestNG       | 7.10.2    | Test Framework             |
+| Maven        | 3.9+      | Build & Dependency Mgmt    |
+| POM Pattern  | —         | Page Object Model          |
