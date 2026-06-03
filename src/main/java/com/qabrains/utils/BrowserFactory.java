@@ -4,41 +4,48 @@ package com.qabrains.utils;
 
 import com.microsoft.playwright.*;
 import com.qabrains.config.AppConfig;
+import com.qabrains.config.ExecutionContext;
 
 /**
- * Factory class to create and manage Playwright Browser instances.
- * Configured for Chromium only.
- * Centralized browser configuration — used by BaseTest.
+ * Factory class to create Playwright objects in one place.
+ *
+ * Beginner note:
+ * - Tests should not directly configure browser launch options.
+ * - They ask this class to create Playwright/Browser/Context/Page objects.
+ * - This keeps setup consistent for every test class.
  */
 public class BrowserFactory {
 
     /**
-     * Creates a new Playwright instance.
+     * Step 1: create Playwright runtime.
      */
     public static Playwright createPlaywright() {
         return Playwright.create();
     }
 
     /**
-     * Launches Chromium browser with configured options.
-     *
-     * @param playwright The Playwright instance.
-     * @return Browser instance (Chromium).
+     * Step 2: launch Chromium browser.
+     * Uses the single execution mode selected for the run (headless/headed).
      */
     public static Browser launchBrowser(Playwright playwright) {
-        BrowserType.LaunchOptions options = new BrowserType.LaunchOptions()
-                .setHeadless(AppConfig.HEADLESS)
+        // Read the authoritative mode once (true=headless, false=headed).
+        boolean runHeadless = ExecutionContext.getInstance().isHeadless();
+
+        // Build launch options from configuration.
+        BrowserType.LaunchOptions launchOptions = new BrowserType.LaunchOptions()
+                .setHeadless(runHeadless)
                 .setSlowMo(AppConfig.SLOW_MO);
 
-        System.out.println("🌀 Launching Chromium browser...");
-        return playwright.chromium().launch(options);
+        System.out.println("[LAUNCH] Starting Chromium browser ("
+                + ExecutionContext.getInstance().getExecutionMode().getDisplayName() + ")...");
+
+        // Actual browser launch.
+        return playwright.chromium().launch(launchOptions);
     }
 
     /**
-     * Creates a new browser context with viewport settings.
-     *
-     * @param browser The Browser instance.
-     * @return BrowserContext instance.
+     * Step 3: create isolated browser context for a test.
+     * Each context is like a fresh browser profile.
      */
     public static BrowserContext createContext(Browser browser) {
         return browser.newContext(new Browser.NewContextOptions()
@@ -46,10 +53,7 @@ public class BrowserFactory {
     }
 
     /**
-     * Creates a new page from the given context.
-     *
-     * @param context The BrowserContext instance.
-     * @return Page instance.
+     * Step 4: open a new page (tab) from context and set default timeout.
      */
     public static Page createPage(BrowserContext context) {
         Page page = context.newPage();

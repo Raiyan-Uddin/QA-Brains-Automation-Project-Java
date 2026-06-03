@@ -21,7 +21,7 @@
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <playwright.version>1.48.0</playwright.version>
+        <playwright.version>1.49.0</playwright.version>
         <testng.version>7.10.2</testng.version>
         <maven.surefire.version>3.2.5</maven.surefire.version>
     </properties>
@@ -31,14 +31,14 @@
         <dependency>
             <groupId>com.microsoft.playwright</groupId>
             <artifactId>playwright</artifactId>
-            <version>1.49.0</version>
+            <version>${playwright.version}</version>
         </dependency>
 
         <!--  TestNG  -->
         <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
-            <version>7.9.0</version>
+            <version>${testng.version}</version>
         </dependency>
         <dependency>
             <groupId>org.slf4j</groupId>
@@ -75,7 +75,9 @@
                         <suiteXmlFile>src/test/resources/testng.xml</suiteXmlFile>
                     </suiteXmlFiles>
                     <!-- Force UTF-8 for emoji/unicode in terminal output -->
-                    <argLine>-Dfile.encoding=UTF-8 -Dstdout.encoding=UTF-8 -Dstderr.encoding=UTF-8</argLine>
+                    <argLine>-Dfile.encoding=UTF-8 -Dstdout.encoding=UTF-8 -Dstderr.encoding=UTF-8 -Dcom.ibm.tools.attach.enable=yes</argLine>
+                    <!-- Use plain text reports for better terminal visibility -->
+                    <useFile>false</useFile>
                 </configuration>
             </plugin>
         </plugins>

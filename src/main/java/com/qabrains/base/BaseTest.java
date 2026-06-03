@@ -3,103 +3,165 @@
 package com.qabrains.base;
 
 import com.microsoft.playwright.*;
-import com.qabrains.config.AppConfig;
 import com.qabrains.utils.BrowserFactory;
+import com.qabrains.utils.FailureReporter;
 import com.qabrains.utils.TestListener;
 import org.testng.annotations.*;
 
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+import java.util.ArrayList;
+import java.util.List;
+
 /**
- * Base Test class that ALL test classes must extend.
+ * BaseTest is the parent class for all test classes.
  *
- * Handles:
- *   - Playwright lifecycle (create/close)
- *   - Browser lifecycle (launch/close)
- *   - Context and Page lifecycle (create/close per test)
- *   - Common setup and teardown
- *
- * USAGE:
- *   1. Extend this class in your test class.
- *   2. Use 'page' object in your tests.
- *   3. Override browserType() if you want a different browser.
- *
- * EXAMPLE:
- *   public class LoginTests extends BaseTest {
- *       @Test
- *       public void testLogin() {
- *           page.navigate("...");
- *       }
- *   }
+ * Beginner flow (high level):
+ * 1) BeforeSuite  -> print framework start message
+ * 2) BeforeClass  -> create Playwright and launch browser (once per class)
+ * 3) BeforeMethod -> create fresh context/page (before every test)
+ * 4) Test method  -> your actual test steps/assertions
+ * 5) AfterMethod  -> close context (after every test)
+ * 6) AfterClass   -> close browser and Playwright (once per class)
+ * 7) AfterSuite   -> print framework end message
  */
 @Listeners(TestListener.class)
 public class BaseTest {
 
-    // ========================
-    // PLAYWRIGHT OBJECTS
-    // ========================
+    // Core Playwright objects used by child test classes.
     protected Playwright playwright;
     protected Browser browser;
     protected BrowserContext context;
     protected Page page;
 
-    // ========================
-    // SUITE SETUP — Runs ONCE before all tests in the suite
-    // ========================
-    @BeforeSuite(alwaysRun = true)
-    public void suiteSetup() {
-        System.out.println("\n🔧 Initializing Playwright framework...");
+    // Failure/debug data for current test execution.
+    protected List<String> consoleLogs = new ArrayList<>();
+    private FailureReporter.FailureDiagnostics lastFailureDiagnostics;
+
+    /**
+     * Captures a full-page screenshot.
+     *
+     * This helper is safe to call only when page exists and is still open.
+     */
+    public String captureFailureScreenshot(String testMethodName) {
+        if (page == null || page.isClosed()) {
+            return null;
+        }
+
+        try {
+            // Ensure screenshot target folder exists.
+            Path screenshotDir = Paths.get("docs", "Test Reports", "screenshots");
+            Files.createDirectories(screenshotDir);
+
+            // Build safe, timestamped file name.
+            String timestamp = LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd_HH-mm-ss"));
+            String className = this.getClass().getSimpleName().replaceAll("[^a-zA-Z0-9._-]", "_");
+            String methodName = testMethodName == null ? "unknown_test" : testMethodName.replaceAll("[^a-zA-Z0-9._-]", "_");
+            String fileName = className + "-" + methodName + "-" + timestamp + ".png";
+
+            // Take screenshot and return absolute path.
+            Path outputPath = screenshotDir.resolve(fileName).toAbsolutePath();
+            page.screenshot(new Page.ScreenshotOptions().setPath(outputPath).setFullPage(true));
+            return outputPath.toString();
+        } catch (PlaywrightException | IOException e) {
+            System.out.println("[WARN] Could not capture failure screenshot: " + e.getMessage());
+            return null;
+        }
     }
 
-    // ========================
-    // CLASS SETUP — Runs ONCE before all tests in a class
-    // ========================
+    /**
+     * Captures full diagnostics (URL, screenshot, page source, logs, browser info).
+     */
+    public FailureReporter.FailureDiagnostics captureFailureDiagnostics(String testMethodName, String failureReason) {
+        String className = this.getClass().getSimpleName();
+
+        FailureReporter.FailureDiagnostics diagnostics = FailureReporter.captureFailureDiagnostics(
+                page,
+                className,
+                testMethodName,
+                failureReason
+        );
+
+        // Keep last diagnostics in memory for optional later usage.
+        this.lastFailureDiagnostics = diagnostics;
+        return diagnostics;
+    }
+
+    /**
+     * Returns last diagnostics captured by this test instance.
+     */
+    public FailureReporter.FailureDiagnostics getLastFailureDiagnostics() {
+        return lastFailureDiagnostics;
+    }
+
+    /**
+     * Returns a safe copy of collected console logs.
+     */
+    public List<String> getConsoleLogs() {
+        return new ArrayList<>(consoleLogs);
+    }
+
+    @BeforeSuite(alwaysRun = true)
+    public void suiteSetup() {
+        System.out.println("\n[SETUP] Initializing Playwright framework...");
+    }
+
     @BeforeClass(alwaysRun = true)
     public void classSetup() {
-        System.out.println("\n🌐 Setting up browser for test class: " + this.getClass().getSimpleName());
+        System.out.println("\n[BROWSER] Setting up browser for test class: " + this.getClass().getSimpleName());
+
+        // Create runtime and launch browser once per test class.
         playwright = BrowserFactory.createPlaywright();
         browser = BrowserFactory.launchBrowser(playwright);
     }
 
-    // ========================
-    // TEST SETUP — Runs before EACH test method
-    // ========================
     @BeforeMethod(alwaysRun = true)
     public void testSetup() {
+        // Every test gets a clean browser context and fresh page.
         context = BrowserFactory.createContext(browser);
         page = BrowserFactory.createPage(context);
-        System.out.println("📄 New page created for test.");
+
+        // Ensure previous test logs do not leak into current test.
+        consoleLogs.clear();
+
+        // Capture browser console messages during this test.
+        page.onConsoleMessage(msg -> {
+            String logEntry = "[" + msg.type() + "] " + msg.text();
+            consoleLogs.add(logEntry);
+        });
+
+        System.out.println("[PAGE] New page created for test.");
     }
 
-    // ========================
-    // TEST TEARDOWN — Runs after EACH test method
-    // ========================
     @AfterMethod(alwaysRun = true)
     public void testTeardown() {
+        // Close context to clean cookies/session/storage created by this test.
         if (context != null) {
             context.close();
-            System.out.println("🧹 Browser context closed.");
+            System.out.println("[CLEANUP] Browser context closed.");
         }
     }
 
-    // ========================
-    // CLASS TEARDOWN — Runs ONCE after all tests in a class
-    // ========================
     @AfterClass(alwaysRun = true)
     public void classTeardown() {
+        // Close browser and Playwright once all tests in this class finish.
         if (browser != null) {
             browser.close();
-            System.out.println("🌐 Browser closed for class: " + this.getClass().getSimpleName());
+            System.out.println("[BROWSER] Browser closed for class: " + this.getClass().getSimpleName());
         }
+
         if (playwright != null) {
             playwright.close();
-            System.out.println("🔧 Playwright closed.");
+            System.out.println("[SETUP] Playwright closed.");
         }
     }
 
-    // ========================
-    // SUITE TEARDOWN — Runs ONCE after all tests in the suite
-    // ========================
     @AfterSuite(alwaysRun = true)
     public void suiteTeardown() {
-        System.out.println("\n🏁 Playwright framework shutdown complete.");
+        System.out.println("\n[DONE] Playwright framework shutdown complete.");
     }
 }

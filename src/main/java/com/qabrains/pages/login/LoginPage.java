@@ -5,6 +5,8 @@ package com.qabrains.pages.login;
 import com.microsoft.playwright.Locator;
 import com.microsoft.playwright.Page;
 import com.qabrains.config.AppConfig;
+import com.microsoft.playwright.options.WaitForSelectorState;
+import com.microsoft.playwright.options.WaitUntilState;
 
 /**
  * Page Object Model for the Login Page.
@@ -39,47 +41,65 @@ public class LoginPage {
 
     // Logo / Home Button
     private Locator logoButton() {
-        return page.locator("a[href*='ecommerce'] img, header a img, .logo, a[aria-label*='home'] img").first();
+        return page.locator(
+                "[data-testid='logo'], [data-testid='app-logo'], [data-testid='logo-link'] img, " +
+                "header a[aria-label*='home' i] img, header a[href*='ecommerce'] img, .logo"
+        ).first();
     }
 
     // Login Heading
     private Locator loginHeading() {
-        return page.locator("h1, h2, h3").filter(new Locator.FilterOptions().setHasText("Login")).first();
+        return page.locator("[data-testid='login-heading'], h1:has-text('Login'), h2:has-text('Login')").first();
     }
 
     // Email Label
     private Locator emailLabel() {
-        return page.locator("label").filter(new Locator.FilterOptions().setHasText("Email")).first();
+        return page.locator("label[for='email'], label:has-text('Email')").first();
     }
 
     // Email Input Field
     private Locator emailInput() {
-        return page.locator("input#email:visible, input[name='email']:visible, input[type='email']:visible").first();
+        return page.locator(
+                "input[data-testid='login-email'], input[data-testid='email-input'], " +
+                "input[name='email'], input[type='email'], input#email"
+        ).first();
     }
 
     // Password Label
     private Locator passwordLabel() {
-        return page.locator("label").filter(new Locator.FilterOptions().setHasText("Password")).first();
+        return page.locator("label[for='password'], label:has-text('Password')").first();
     }
 
     // Password Input Field
     private Locator passwordInput() {
-        return page.locator("input#password:visible, input[name='password']:visible").first();
+        return page.locator(
+                "input[data-testid='login-password'], input[data-testid='password-input'], " +
+                "input[name='password'], input#password"
+        ).first();
     }
 
     // Password Visibility Toggle Button
     private Locator passwordToggleButton() {
-        return page.locator("button:near(input[name='password']), button:near(#password), [class*='toggle'], [class*='eye'], [aria-label*='password' i]").first();
+        return page.locator(
+                "button[data-testid='password-toggle'], [data-testid='toggle-password-visibility'], " +
+                "button[aria-label*='password' i], button:near(input[name='password']), button:near(#password)"
+        ).first();
     }
 
     // Login Button
     private Locator loginButton() {
-        return page.locator("button[type='submit'], button:has-text('Login'), input[type='submit']").first();
+        return page.locator(
+                "button[data-testid='login-submit'], button[data-testid='login-button'], " +
+                "button[type='submit']:has-text('Login'), button:has-text('Login'), input[type='submit']"
+        ).first();
     }
 
     // Error Message (Generic — for login failures)
     private Locator errorMessage() {
-        return page.locator("[class*='error'], [class*='alert'], [role='alert'], .error-message, .alert-danger").first();
+        return page.locator(
+                "[data-testid='login-error'], [data-testid='error-message'], [role='alert'], " +
+                ".error-message, .alert-danger, [class*='error'], [class*='alert']"
+        ).first();
     }
 
     // ========================
@@ -115,9 +135,30 @@ public class LoginPage {
      * Navigates to the Login Page.
      */
     public void navigateToLoginPage() {
-        page.navigate(AppConfig.LOGIN_URL);
-        page.waitForLoadState();
-        System.out.println("  📍 Navigated to: " + AppConfig.LOGIN_URL);
+        for (int attempt = 1; attempt <= 3; attempt++) {
+            try {
+                page.navigate(
+                        AppConfig.LOGIN_URL,
+                        new Page.NavigateOptions()
+                                .setWaitUntil(WaitUntilState.DOMCONTENTLOADED)
+                                .setTimeout((double) AppConfig.DEFAULT_TIMEOUT)
+                );
+                waitForLoginFormReady();
+                System.out.println("  [OK] Navigated to: " + AppConfig.LOGIN_URL);
+                return;
+            } catch (RuntimeException ex) {
+                if (attempt == 3) {
+                    throw ex;
+                }
+                page.waitForTimeout(1200);
+            }
+        }
+    }
+
+    private void waitForLoginFormReady() {
+        emailInput().waitFor(new Locator.WaitForOptions().setState(WaitForSelectorState.VISIBLE));
+        passwordInput().waitFor(new Locator.WaitForOptions().setState(WaitForSelectorState.VISIBLE));
+        loginButton().waitFor(new Locator.WaitForOptions().setState(WaitForSelectorState.VISIBLE));
     }
 
     // ========================
@@ -204,9 +245,10 @@ public class LoginPage {
      * @param email The email address to enter.
      */
     public void enterEmail(String email) {
+        emailInput().waitFor(new Locator.WaitForOptions().setState(WaitForSelectorState.VISIBLE));
         emailInput().clear();
         emailInput().fill(email);
-        System.out.println("  📧 Entered email: " + email);
+        System.out.println("  [INPUT] Entered email: " + email);
     }
 
     /**
@@ -215,33 +257,37 @@ public class LoginPage {
      * @param password The password to enter.
      */
     public void enterPassword(String password) {
+        passwordInput().waitFor(new Locator.WaitForOptions().setState(WaitForSelectorState.VISIBLE));
         passwordInput().clear();
         passwordInput().fill(password);
-        System.out.println("  🔑 Entered password: " + "*".repeat(password.length()));
+        System.out.println("  [INPUT] Entered password: " + "*".repeat(password.length()));
     }
 
     /**
      * Clicks the Login button.
      */
     public void clickLoginButton() {
+        loginButton().waitFor(new Locator.WaitForOptions().setState(WaitForSelectorState.VISIBLE));
         loginButton().click();
-        System.out.println("  🖱 Clicked Login button.");
+        System.out.println("  [CLICK] Clicked Login button.");
     }
 
     /**
      * Clicks the Logo/Home button.
      */
     public void clickLogoButton() {
+        logoButton().waitFor(new Locator.WaitForOptions().setState(WaitForSelectorState.VISIBLE));
         logoButton().click();
-        System.out.println("  🖱 Clicked Logo/Home button.");
+        System.out.println("  [CLICK] Clicked Logo/Home button.");
     }
 
     /**
      * Clicks the Password Visibility Toggle button.
      */
     public void clickPasswordToggle() {
+        passwordToggleButton().waitFor(new Locator.WaitForOptions().setState(WaitForSelectorState.VISIBLE));
         passwordToggleButton().click();
-        System.out.println("  🖱 Clicked Password Toggle button.");
+        System.out.println("  [CLICK] Clicked Password Toggle button.");
     }
 
     /**
@@ -251,7 +297,7 @@ public class LoginPage {
      * @param password The password.
      */
     public void performLogin(String email, String password) {
-        System.out.println("  🔐 Performing login...");
+        System.out.println("  [LOGIN] Performing login...");
         enterEmail(email);
         enterPassword(password);
         clickLoginButton();
@@ -263,7 +309,7 @@ public class LoginPage {
     public void clearAllFields() {
         emailInput().clear();
         passwordInput().clear();
-        System.out.println("  🧹 Cleared all input fields.");
+        System.out.println("  [CLEAR] Cleared all input fields.");
     }
 
     // ========================

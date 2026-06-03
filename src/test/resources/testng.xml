@@ -1,88 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 
-<suite name="QA Brains E-Commerce - Automation Suite" verbose="1">
+<!--
+  Beginner-friendly note:
+  - Checkout and cart flows share server-side user state.
+  - Running those classes in parallel can cause cross-test interference.
+  - Keep full-suite execution sequential for stable pass/fail signals.
+-->
+<suite name="QA Brains E-Commerce - Automation Suite"
+       verbose="1"
+       parallel="none"
+       thread-count="1">
 
-    <!-- ════════════════════════════════════════════════════════ -->
-    <!-- Global Listeners                                        -->
-    <!-- ════════════════════════════════════════════════════════ -->
     <listeners>
         <listener class-name="com.qabrains.utils.TestListener"/>
     </listeners>
 
-    <!-- ════════════════════════════════════════════════════════ -->
-    <!-- LOGIN MODULE                                            -->
-    <!-- ════════════════════════════════════════════════════════ -->
-    <test name="Login Page Tests">
+    <!--
+      Important for class-level parallel run:
+      - Keep all classes under one <test> so TestNG can parallelize class execution.
+      - BaseTest already isolates state using a fresh BrowserContext per test method.
+    -->
+    <test name="All Modules - Class Parallel Execution">
         <classes>
             <class name="com.qabrains.tests.login.LoginTests"/>
-        </classes>
-    </test>
-
-    <!-- ════════════════════════════════════════════════════════ -->
-    <!-- HOME PAGE MODULE (Add when ready)                       -->
-    <!-- ════════════════════════════════════════════════════════ -->
-    <!--
-    <test name="Home Page Tests">
-        <classes>
             <class name="com.qabrains.tests.home.HomeTests"/>
-        </classes>
-    </test>
-    -->
-
-    <!-- ════════════════════════════════════════════════════════ -->
-    <!-- PRODUCT DETAILS MODULE (Add when ready)                 -->
-    <!-- ════════════════════════════════════════════════════════ -->
-    <!--
-    <test name="Product Details Page Tests">
-        <classes>
             <class name="com.qabrains.tests.productdetails.ProductDetailsTests"/>
-        </classes>
-    </test>
-    -->
-
-    <!-- ════════════════════════════════════════════════════════ -->
-    <!-- CART MODULE (Add when ready)                            -->
-    <!-- ════════════════════════════════════════════════════════ -->
-    <!--
-    <test name="Cart Page Tests">
-        <classes>
             <class name="com.qabrains.tests.cart.CartTests"/>
-        </classes>
-    </test>
-    -->
-
-    <!-- ════════════════════════════════════════════════════════ -->
-    <!-- CHECKOUT INFO MODULE (Add when ready)                   -->
-    <!-- ════════════════════════════════════════════════════════ -->
-    <!--
-    <test name="Checkout Info Page Tests">
-        <classes>
             <class name="com.qabrains.tests.checkoutinfo.CheckoutInfoTests"/>
-        </classes>
-    </test>
-    -->
-
-    <!-- ════════════════════════════════════════════════════════ -->
-    <!-- CHECKOUT OVERVIEW MODULE (Add when ready)               -->
-    <!-- ════════════════════════════════════════════════════════ -->
-    <!--
-    <test name="Checkout Overview Page Tests">
-        <classes>
             <class name="com.qabrains.tests.checkoutoverview.CheckoutOverviewTests"/>
-        </classes>
-    </test>
-    -->
-
-    <!-- ════════════════════════════════════════════════════════ -->
-    <!-- CHECKOUT COMPLETE MODULE (Add when ready)               -->
-    <!-- ════════════════════════════════════════════════════════ -->
-    <!--
-    <test name="Checkout Complete Page Tests">
-        <classes>
             <class name="com.qabrains.tests.checkoutcomplete.CheckoutCompleteTests"/>
         </classes>
     </test>
-    -->
 
 </suite>

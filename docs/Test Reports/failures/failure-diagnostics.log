@@ -1,0 +1,862 @@
+
+================================================================================
+FAILURE REPORT: 2026-06-02T16:01:21.687095
+Execution Mode: Headless
+Test Class: CheckoutInfoTests
+Test Method: CI_001_checkoutInfoPageAndFieldsVisible
+Failure Reason: Locator expected to be visible
+Call log:
+  - Locator.expect with timeout 5000ms
+  - waiting for locator("[data-testid='checkout-info-heading'], h1:has-text('Information'), h2:has-text('Information')").first()
+URL: https://practice.qabrains.com/ecommerce/checkout-info
+Screenshot: D:\1. Intellij Idea\QA-Brains-Ecommerce\docs\Test Reports\failures\screenshots\CheckoutInfoTests-CI_001_checkoutInfoPageAndFieldsVisible_2026-06-02_16-01-21-688.png
+Page Source: D:\1. Intellij Idea\QA-Brains-Ecommerce\docs\Test Reports\failures\page-source\CheckoutInfoTests-CI_001_checkoutInfoPageAndFieldsVisible_2026-06-02_16-01-21-820.html
+Browser Info: {userAgent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/131.0.6778.33 Safari/537.36, viewport={width=1920, height=1080}, title=QA Practice Site}
+Console Logs: 
+  - Console logs require setup in BaseTest.beforeMethod()
+================================================================================
+
+================================================================================
+FAILURE REPORT: 2026-06-02T16:01:29.202597300
+Execution Mode: Headless
+Test Class: CheckoutCompleteTests
+Test Method: CC_001_completionHeadingAndConfirmationTextsVisible
+Failure Reason: Locator expected to be visible
+Call log:
+  - Locator.expect with timeout 5000ms
+  - waiting for locator("[data-testid='checkout-complete-heading'], h1:has-text('Checkout Complete'), h1:has-text('Complete')").first()
+URL: https://practice.qabrains.com/ecommerce/checkout-complete
+Screenshot: D:\1. Intellij Idea\QA-Brains-Ecommerce\docs\Test Reports\failures\screenshots\CheckoutCompleteTests-CC_001_completionHeadingAndConfirmationTextsVisible_2026-06-02_16-01-29-202.png
+Page Source: D:\1. Intellij Idea\QA-Brains-Ecommerce\docs\Test Reports\failures\page-source\CheckoutCompleteTests-CC_001_completionHeadingAndConfirmationTextsVisible_2026-06-02_16-01-29-304.html
+Browser Info: {userAgent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/131.0.6778.33 Safari/537.36, viewport={width=1920, height=1080}, title=QA Practice Site}
+Console Logs: 
+  - Console logs require setup in BaseTest.beforeMethod()
+================================================================================
+
+================================================================================
+FAILURE REPORT: 2026-06-02T16:01:36.920650200
+Execution Mode: Headless
+Test Class: CheckoutInfoTests
+Test Method: CI_001S_smokeCheckoutInfoPageLoadsWithAllFields
+Failure Reason: Locator expected to be visible
+Call log:
+  - Locator.expect with timeout 5000ms
+  - waiting for locator("[data-testid='checkout-info-heading'], h1:has-text('Information'), h2:has-text('Information')").first()
+URL: https://practice.qabrains.com/ecommerce/checkout-info
+Screenshot: D:\1. Intellij Idea\QA-Brains-Ecommerce\docs\Test Reports\failures\screenshots\CheckoutInfoTests-CI_001S_smokeCheckoutInfoPageLoadsWithAllFields_2026-06-02_16-01-36-920.png
+Page Source: D:\1. Intellij Idea\QA-Brains-Ecommerce\docs\Test Reports\failures\page-source\CheckoutInfoTests-CI_001S_smokeCheckoutInfoPageLoadsWithAllFields_2026-06-02_16-01-37-056.html
+Browser Info: {userAgent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/131.0.6778.33 Safari/537.36, viewport={width=1920, height=1080}, title=QA Practice Site}
+Console Logs: 
+  - Console logs require setup in BaseTest.beforeMethod()
+================================================================================
+
+================================================================================
+FAILURE REPORT: 2026-06-02T16:01:47.667890500
+Execution Mode: Headless
+Test Class: CheckoutCompleteTests
+Test Method: CC_001S_smokeCompletionPageShowsThankYouConfirmation
+Failure Reason: Locator expected to be visible
+Call log:
+  - Locator.expect with timeout 5000ms
+  - waiting for locator("[data-testid='checkout-complete-heading'], h1:has-text('Checkout Complete'), h1:has-text('Complete')").first()
+URL: https://practice.qabrains.com/ecommerce/checkout-complete
+Screenshot: D:\1. Intellij Idea\QA-Brains-Ecommerce\docs\Test Reports\failures\screenshots\CheckoutCompleteTests-CC_001S_smokeCompletionPageShowsThankYouConfirmation_2026-06-02_16-01-47-668.png
+Page Source: D:\1. Intellij Idea\QA-Brains-Ecommerce\docs\Test Reports\failures\page-source\CheckoutCompleteTests-CC_001S_smokeCompletionPageShowsThankYouConfirmation_2026-06-02_16-01-47-770.html
+Browser Info: {userAgent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/131.0.6778.33 Safari/537.36, viewport={width=1920, height=1080}, title=QA Practice Site}
+Console Logs: 
+  - Console logs require setup in BaseTest.beforeMethod()
+================================================================================
+
+================================================================================
+FAILURE REPORT: 2026-06-02T16:02:34.584591900
+Execution Mode: Headless
+Test Class: CartTests
+Test Method: CART_007_continueShoppingNavigatesToHome
+Failure Reason: Expected navigation to home after Continue Shopping, but got: https://practice.qabrains.com/ecommerce/cart expected [true] but found [false]
+URL: https://practice.qabrains.com/ecommerce/cart
+Screenshot: D:\1. Intellij Idea\QA-Brains-Ecommerce\docs\Test Reports\failures\screenshots\CartTests-CART_007_continueShoppingNavigatesToHome_2026-06-02_16-02-34-585.png
+Page Source: D:\1. Intellij Idea\QA-Brains-Ecommerce\docs\Test Reports\failures\page-source\CartTests-CART_007_continueShoppingNavigatesToHome_2026-06-02_16-02-34-700.html
+Browser Info: {userAgent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/131.0.6778.33 Safari/537.36, viewport={width=1920, height=1080}, title=QA Practice Site}
+Console Logs: 
+  - Console logs require setup in BaseTest.beforeMethod()
+================================================================================
+
+================================================================================
+FAILURE REPORT: 2026-06-02T16:02:58.690683300
+Execution Mode: Headless
+Test Class: CartTests
+Test Method: CART_008S_smokeCheckoutButtonNavigatesToCheckoutInfo
+Failure Reason: Expected navigation to checkout page, but got: https://practice.qabrains.com/ecommerce/cart expected [true] but found [false]
+URL: https://practice.qabrains.com/ecommerce/cart
+Screenshot: D:\1. Intellij Idea\QA-Brains-Ecommerce\docs\Test Reports\failures\screenshots\CartTests-CART_008S_smokeCheckoutButtonNavigatesToCheckoutInfo_2026-06-02_16-02-58-690.png
+Page Source: D:\1. Intellij Idea\QA-Brains-Ecommerce\docs\Test Reports\failures\page-source\CartTests-CART_008S_smokeCheckoutButtonNavigatesToCheckoutInfo_2026-06-02_16-02-58-789.html
+Browser Info: {userAgent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/131.0.6778.33 Safari/537.36, viewport={width=1920, height=1080}, title=QA Practice Site}
+Console Logs: 
+  - Console logs require setup in BaseTest.beforeMethod()
+================================================================================
+
+================================================================================
+FAILURE REPORT: 2026-06-02T16:04:39.117931300
+Execution Mode: Headless
+Test Class: CheckoutOverviewTests
+Test Method: CO_001_overviewPageRendersProductSummary
+Failure Reason: Locator expected to be visible
+Call log:
+  - Locator.expect with timeout 5000ms
+  - waiting for locator("[data-testid='checkout-overview-heading'], h1:has-text('Checkout'), h1:has-text('Overview'), h2:has-text('Overview')").first()
+URL: https://practice.qabrains.com/ecommerce/checkout-overview
+Screenshot: D:\1. Intellij Idea\QA-Brains-Ecommerce\docs\Test Reports\failures\screenshots\CheckoutOverviewTests-CO_001_overviewPageRendersProductSummary_2026-06-02_16-04-39-118.png
+Page Source: D:\1. Intellij Idea\QA-Brains-Ecommerce\docs\Test Reports\failures\page-source\CheckoutOverviewTests-CO_001_overviewPageRendersProductSummary_2026-06-02_16-04-39-219.html
+Browser Info: {userAgent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/131.0.6778.33 Safari/537.36, viewport={width=1920, height=1080}, title=QA Practice Site}
+Console Logs: 
+  - Console logs require setup in BaseTest.beforeMethod()
+================================================================================
+
+================================================================================
+FAILURE REPORT: 2026-06-02T16:04:54.942578
+Execution Mode: Headless
+Test Class: CheckoutOverviewTests
+Test Method: CO_001S_smokeOverviewPageRendersWithPrice
+Failure Reason: Locator expected to be visible
+Call log:
+  - Locator.expect with timeout 5000ms
+  - waiting for locator("[data-testid='checkout-overview-heading'], h1:has-text('Checkout'), h1:has-text('Overview'), h2:has-text('Overview')").first()
+URL: https://practice.qabrains.com/ecommerce/checkout-overview
+Screenshot: D:\1. Intellij Idea\QA-Brains-Ecommerce\docs\Test Reports\failures\screenshots\CheckoutOverviewTests-CO_001S_smokeOverviewPageRendersWithPrice_2026-06-02_16-04-54-942.png
+Page Source: D:\1. Intellij Idea\QA-Brains-Ecommerce\docs\Test Reports\failures\page-source\CheckoutOverviewTests-CO_001S_smokeOverviewPageRendersWithPrice_2026-06-02_16-04-55-033.html
+Browser Info: {userAgent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/131.0.6778.33 Safari/537.36, viewport={width=1920, height=1080}, title=QA Practice Site}
+Console Logs: 
+  - Console logs require setup in BaseTest.beforeMethod()
+================================================================================
+
+================================================================================
+FAILURE REPORT: 2026-06-02T16:05:12.995234800
+Execution Mode: Headless
+Test Class: CheckoutCompleteTests
+Test Method: CC_009_completionCtaIsKeyboardAccessible
+Failure Reason: Expected Continue Shopping button to receive keyboard focus via Tab. expected [true] but found [false]
+URL: https://practice.qabrains.com/ecommerce/checkout-complete
+Screenshot: D:\1. Intellij Idea\QA-Brains-Ecommerce\docs\Test Reports\failures\screenshots\CheckoutCompleteTests-CC_009_completionCtaIsKeyboardAccessible_2026-06-02_16-05-12-995.png
+Page Source: D:\1. Intellij Idea\QA-Brains-Ecommerce\docs\Test Reports\failures\page-source\CheckoutCompleteTests-CC_009_completionCtaIsKeyboardAccessible_2026-06-02_16-05-13-112.html
+Browser Info: {userAgent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/131.0.6778.33 Safari/537.36, viewport={width=1920, height=1080}, title=QA Practice Site}
+Console Logs: 
+  - Console logs require setup in BaseTest.beforeMethod()
+================================================================================
+
+================================================================================
+FAILURE REPORT: 2026-06-02T16:05:13.505971700
+Execution Mode: Headless
+Test Class: CheckoutOverviewTests
+Test Method: CO_002_overviewPageRendersProductSummaryFunctional
+Failure Reason: Locator expected to be visible
+Call log:
+  - Locator.expect with timeout 5000ms
+  - waiting for locator("[data-testid='checkout-overview-heading'], h1:has-text('Checkout'), h1:has-text('Overview'), h2:has-text('Overview')").first()
+URL: https://practice.qabrains.com/ecommerce/checkout-overview
+Screenshot: D:\1. Intellij Idea\QA-Brains-Ecommerce\docs\Test Reports\failures\screenshots\CheckoutOverviewTests-CO_002_overviewPageRendersProductSummaryFunctional_2026-06-02_16-05-13-505.png
+Page Source: D:\1. Intellij Idea\QA-Brains-Ecommerce\docs\Test Reports\failures\page-source\CheckoutOverviewTests-CO_002_overviewPageRendersProductSummaryFunctional_2026-06-02_16-05-13-616.html
+Browser Info: {userAgent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/131.0.6778.33 Safari/537.36, viewport={width=1920, height=1080}, title=QA Practice Site}
+Console Logs: 
+  - Console logs require setup in BaseTest.beforeMethod()
+================================================================================
+
+================================================================================
+FAILURE REPORT: 2026-06-02T16:05:38.977796700
+Execution Mode: Headless
+Test Class: CheckoutCompleteTests
+Test Method: CC_010_completionPageRendersInMobileAndDesktopViewports
+Failure Reason: Locator expected to be visible
+Call log:
+  - Locator.expect with timeout 5000ms
+  - waiting for locator("[data-testid='checkout-complete-heading'], h1:has-text('Checkout Complete'), h1:has-text('Complete')").first()
+URL: https://practice.qabrains.com/ecommerce/checkout-complete
+Screenshot: D:\1. Intellij Idea\QA-Brains-Ecommerce\docs\Test Reports\failures\screenshots\CheckoutCompleteTests-CC_010_completionPageRendersInMobileAndDesktopViewports_2026-06-02_16-05-38-977.png
+Page Source: D:\1. Intellij Idea\QA-Brains-Ecommerce\docs\Test Reports\failures\page-source\CheckoutCompleteTests-CC_010_completionPageRendersInMobileAndDesktopViewports_2026-06-02_16-05-39-055.html
+Browser Info: {userAgent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/131.0.6778.33 Safari/537.36, viewport={width=390, height=844}, title=QA Practice Site}
+Console Logs: 
+  - Console logs require setup in BaseTest.beforeMethod()
+================================================================================
+
+================================================================================
+FAILURE REPORT: 2026-06-02T16:08:06.968033100
+Execution Mode: Headless
+Test Class: CheckoutOverviewTests
+Test Method: CO_011_unauthorizedDirectAccessIsGuarded
+Failure Reason: Expected unauthenticated checkout-overview access to redirect to login, but got: https://practice.qabrains.com/ecommerce/checkout-overview expected [true] but found [false]
+URL: https://practice.qabrains.com/ecommerce/checkout-overview
+Screenshot: D:\1. Intellij Idea\QA-Brains-Ecommerce\docs\Test Reports\failures\screenshots\CheckoutOverviewTests-CO_011_unauthorizedDirectAccessIsGuarded_2026-06-02_16-08-06-968.png
+Page Source: D:\1. Intellij Idea\QA-Brains-Ecommerce\docs\Test Reports\failures\page-source\CheckoutOverviewTests-CO_011_unauthorizedDirectAccessIsGuarded_2026-06-02_16-08-07-088.html
+Browser Info: {userAgent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/131.0.6778.33 Safari/537.36, viewport={width=1920, height=1080}, title=QA Practice Site}
+Console Logs: 
+  - Console logs require setup in BaseTest.beforeMethod()
+================================================================================
+
+================================================================================
+FAILURE REPORT: 2026-06-02T16:08:58.128050600
+Execution Mode: Headless
+Test Class: CheckoutOverviewTests
+Test Method: CO_014_overviewPageTitleAndBreadcrumbCorrect
+Failure Reason: Locator expected to be visible
+Call log:
+  - Locator.expect with timeout 5000ms
+  - waiting for locator("[data-testid='checkout-overview-heading'], h1:has-text('Checkout'), h1:has-text('Overview'), h2:has-text('Overview')").first()
+URL: https://practice.qabrains.com/ecommerce/checkout-overview
+Screenshot: D:\1. Intellij Idea\QA-Brains-Ecommerce\docs\Test Reports\failures\screenshots\CheckoutOverviewTests-CO_014_overviewPageTitleAndBreadcrumbCorrect_2026-06-02_16-08-58-128.png
+Page Source: D:\1. Intellij Idea\QA-Brains-Ecommerce\docs\Test Reports\failures\page-source\CheckoutOverviewTests-CO_014_overviewPageTitleAndBreadcrumbCorrect_2026-06-02_16-08-58-231.html
+Browser Info: {userAgent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/131.0.6778.33 Safari/537.36, viewport={width=1920, height=1080}, title=QA Practice Site}
+Console Logs: 
+  - Console logs require setup in BaseTest.beforeMethod()
+================================================================================
+
+================================================================================
+FAILURE REPORT: 2026-06-02T16:09:39.633681300
+Execution Mode: Headless
+Test Class: CheckoutCompleteTests
+Test Method: CC_001_completionHeadingAndConfirmationTextsVisible
+Failure Reason: Locator expected to be visible
+Call log:
+  - Locator.expect with timeout 5000ms
+  - waiting for locator("[data-testid='checkout-complete-heading'], h1:has-text('Checkout Complete'), h1:has-text('Complete')").first()
+URL: https://practice.qabrains.com/ecommerce/checkout-complete
+Screenshot: D:\1. Intellij Idea\QA-Brains-Ecommerce\docs\Test Reports\failures\screenshots\CheckoutCompleteTests-CC_001_completionHeadingAndConfirmationTextsVisible_2026-06-02_16-09-39-634.png
+Page Source: D:\1. Intellij Idea\QA-Brains-Ecommerce\docs\Test Reports\failures\page-source\CheckoutCompleteTests-CC_001_completionHeadingAndConfirmationTextsVisible_2026-06-02_16-09-39-768.html
+Browser Info: {userAgent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/131.0.6778.33 Safari/537.36, viewport={width=1920, height=1080}, title=QA Practice Site}
+Console Logs: 
+  - Console logs require setup in BaseTest.beforeMethod()
+================================================================================
+
+================================================================================
+FAILURE REPORT: 2026-06-02T16:10:04.652490800
+Execution Mode: Headless
+Test Class: CheckoutCompleteTests
+Test Method: CC_001S_smokeCompletionPageShowsThankYouConfirmation
+Failure Reason: Locator expected to be visible
+Call log:
+  - Locator.expect with timeout 5000ms
+  - waiting for locator("[data-testid='checkout-complete-heading'], h1:has-text('Checkout Complete'), h1:has-text('Complete')").first()
+URL: https://practice.qabrains.com/ecommerce/checkout-complete
+Screenshot: D:\1. Intellij Idea\QA-Brains-Ecommerce\docs\Test Reports\failures\screenshots\CheckoutCompleteTests-CC_001S_smokeCompletionPageShowsThankYouConfirmation_2026-06-02_16-10-04-652.png
+Page Source: D:\1. Intellij Idea\QA-Brains-Ecommerce\docs\Test Reports\failures\page-source\CheckoutCompleteTests-CC_001S_smokeCompletionPageShowsThankYouConfirmation_2026-06-02_16-10-04-762.html
+Browser Info: {userAgent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/131.0.6778.33 Safari/537.36, viewport={width=1920, height=1080}, title=QA Practice Site}
+Console Logs: 
+  - Console logs require setup in BaseTest.beforeMethod()
+================================================================================
+
+================================================================================
+FAILURE REPORT: 2026-06-02T16:11:00.066184
+Execution Mode: Headless
+Test Class: CartTests
+Test Method: CART_008S_smokeCheckoutButtonNavigatesToCheckoutInfo
+Failure Reason: Expected navigation to checkout page, but got: https://practice.qabrains.com/ecommerce/cart expected [true] but found [false]
+URL: https://practice.qabrains.com/ecommerce/cart
+Screenshot: D:\1. Intellij Idea\QA-Brains-Ecommerce\docs\Test Reports\failures\screenshots\CartTests-CART_008S_smokeCheckoutButtonNavigatesToCheckoutInfo_2026-06-02_16-11-00-066.png
+Page Source: D:\1. Intellij Idea\QA-Brains-Ecommerce\docs\Test Reports\failures\page-source\CartTests-CART_008S_smokeCheckoutButtonNavigatesToCheckoutInfo_2026-06-02_16-11-00-169.html
+Browser Info: {userAgent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/131.0.6778.33 Safari/537.36, viewport={width=1920, height=1080}, title=QA Practice Site}
+Console Logs: 
+  - Console logs require setup in BaseTest.beforeMethod()
+================================================================================
+
+================================================================================
+FAILURE REPORT: 2026-06-02T16:12:30.684348
+Execution Mode: Headless
+Test Class: CheckoutInfoTests
+Test Method: CI_001_checkoutInfoPageAndFieldsVisible
+Failure Reason: Locator expected to be visible
+Call log:
+  - Locator.expect with timeout 5000ms
+  - waiting for locator("[data-testid='checkout-info-heading'], h1:has-text('Information'), h2:has-text('Information')").first()
+URL: https://practice.qabrains.com/ecommerce/checkout-info
+Screenshot: D:\1. Intellij Idea\QA-Brains-Ecommerce\docs\Test Reports\failures\screenshots\CheckoutInfoTests-CI_001_checkoutInfoPageAndFieldsVisible_2026-06-02_16-12-30-685.png
+Page Source: D:\1. Intellij Idea\QA-Brains-Ecommerce\docs\Test Reports\failures\page-source\CheckoutInfoTests-CI_001_checkoutInfoPageAndFieldsVisible_2026-06-02_16-12-30-820.html
+Browser Info: {userAgent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/131.0.6778.33 Safari/537.36, viewport={width=1920, height=1080}, title=QA Practice Site}
+Console Logs: 
+  - Console logs require setup in BaseTest.beforeMethod()
+================================================================================
+
+================================================================================
+FAILURE REPORT: 2026-06-02T16:12:44.538868300
+Execution Mode: Headless
+Test Class: CheckoutInfoTests
+Test Method: CI_001S_smokeCheckoutInfoPageLoadsWithAllFields
+Failure Reason: Locator expected to be visible
+Call log:
+  - Locator.expect with timeout 5000ms
+  - waiting for locator("[data-testid='checkout-info-heading'], h1:has-text('Information'), h2:has-text('Information')").first()
+URL: https://practice.qabrains.com/ecommerce/checkout-info
+Screenshot: D:\1. Intellij Idea\QA-Brains-Ecommerce\docs\Test Reports\failures\screenshots\CheckoutInfoTests-CI_001S_smokeCheckoutInfoPageLoadsWithAllFields_2026-06-02_16-12-44-539.png
+Page Source: D:\1. Intellij Idea\QA-Brains-Ecommerce\docs\Test Reports\failures\page-source\CheckoutInfoTests-CI_001S_smokeCheckoutInfoPageLoadsWithAllFields_2026-06-02_16-12-44-687.html
+Browser Info: {userAgent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/131.0.6778.33 Safari/537.36, viewport={width=1920, height=1080}, title=QA Practice Site}
+Console Logs: 
+  - Console logs require setup in BaseTest.beforeMethod()
+================================================================================
+
+================================================================================
+FAILURE REPORT: 2026-06-02T16:13:05.069207500
+Execution Mode: Headless
+Test Class: CheckoutCompleteTests
+Test Method: CC_010_completionPageRendersInMobileAndDesktopViewports
+Failure Reason: Locator expected to be visible
+Call log:
+  - Locator.expect with timeout 5000ms
+  - waiting for locator("[data-testid='checkout-complete-heading'], h1:has-text('Checkout Complete'), h1:has-text('Complete')").first()
+URL: https://practice.qabrains.com/ecommerce/checkout-complete
+Screenshot: D:\1. Intellij Idea\QA-Brains-Ecommerce\docs\Test Reports\failures\screenshots\CheckoutCompleteTests-CC_010_completionPageRendersInMobileAndDesktopViewports_2026-06-02_16-13-05-070.png
+Page Source: D:\1. Intellij Idea\QA-Brains-Ecommerce\docs\Test Reports\failures\page-source\CheckoutCompleteTests-CC_010_completionPageRendersInMobileAndDesktopViewports_2026-06-02_16-13-05-132.html
+Browser Info: {userAgent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/131.0.6778.33 Safari/537.36, viewport={width=390, height=844}, title=QA Practice Site}
+Console Logs: 
+  - Console logs require setup in BaseTest.beforeMethod()
+================================================================================
+
+================================================================================
+FAILURE REPORT: 2026-06-02T16:14:57.420577200
+Execution Mode: Headless
+Test Class: CheckoutOverviewTests
+Test Method: CO_001_overviewPageRendersProductSummary
+Failure Reason: Locator expected to be visible
+Call log:
+  - Locator.expect with timeout 5000ms
+  - waiting for locator("[data-testid='checkout-overview-heading'], h1:has-text('Checkout'), h1:has-text('Overview'), h2:has-text('Overview')").first()
+URL: https://practice.qabrains.com/ecommerce/checkout-overview
+Screenshot: D:\1. Intellij Idea\QA-Brains-Ecommerce\docs\Test Reports\failures\screenshots\CheckoutOverviewTests-CO_001_overviewPageRendersProductSummary_2026-06-02_16-14-57-420.png
+Page Source: D:\1. Intellij Idea\QA-Brains-Ecommerce\docs\Test Reports\failures\page-source\CheckoutOverviewTests-CO_001_overviewPageRendersProductSummary_2026-06-02_16-14-57-514.html
+Browser Info: {userAgent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/131.0.6778.33 Safari/537.36, viewport={width=1920, height=1080}, title=QA Practice Site}
+Console Logs: 
+  - Console logs require setup in BaseTest.beforeMethod()
+================================================================================
+
+================================================================================
+FAILURE REPORT: 2026-06-02T16:15:18.692450100
+Execution Mode: Headless
+Test Class: CheckoutOverviewTests
+Test Method: CO_001S_smokeOverviewPageRendersWithPrice
+Failure Reason: Locator expected to be visible
+Call log:
+  - Locator.expect with timeout 5000ms
+  - waiting for locator("[data-testid='checkout-overview-heading'], h1:has-text('Checkout'), h1:has-text('Overview'), h2:has-text('Overview')").first()
+URL: https://practice.qabrains.com/ecommerce/checkout-overview
+Screenshot: D:\1. Intellij Idea\QA-Brains-Ecommerce\docs\Test Reports\failures\screenshots\CheckoutOverviewTests-CO_001S_smokeOverviewPageRendersWithPrice_2026-06-02_16-15-18-692.png
+Page Source: D:\1. Intellij Idea\QA-Brains-Ecommerce\docs\Test Reports\failures\page-source\CheckoutOverviewTests-CO_001S_smokeOverviewPageRendersWithPrice_2026-06-02_16-15-18-794.html
+Browser Info: {userAgent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/131.0.6778.33 Safari/537.36, viewport={width=1920, height=1080}, title=QA Practice Site}
+Console Logs: 
+  - Console logs require setup in BaseTest.beforeMethod()
+================================================================================
+
+================================================================================
+FAILURE REPORT: 2026-06-02T16:15:35.118365300
+Execution Mode: Headless
+Test Class: CheckoutOverviewTests
+Test Method: CO_002_overviewPageRendersProductSummaryFunctional
+Failure Reason: Locator expected to be visible
+Call log:
+  - Locator.expect with timeout 5000ms
+  - waiting for locator("[data-testid='checkout-overview-heading'], h1:has-text('Checkout'), h1:has-text('Overview'), h2:has-text('Overview')").first()
+URL: https://practice.qabrains.com/ecommerce/checkout-overview
+Screenshot: D:\1. Intellij Idea\QA-Brains-Ecommerce\docs\Test Reports\failures\screenshots\CheckoutOverviewTests-CO_002_overviewPageRendersProductSummaryFunctional_2026-06-02_16-15-35-119.png
+Page Source: D:\1. Intellij Idea\QA-Brains-Ecommerce\docs\Test Reports\failures\page-source\CheckoutOverviewTests-CO_002_overviewPageRendersProductSummaryFunctional_2026-06-02_16-15-35-212.html
+Browser Info: {userAgent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/131.0.6778.33 Safari/537.36, viewport={width=1920, height=1080}, title=QA Practice Site}
+Console Logs: 
+  - Console logs require setup in BaseTest.beforeMethod()
+================================================================================
+
+================================================================================
+FAILURE REPORT: 2026-06-02T16:18:20.535924500
+Execution Mode: Headless
+Test Class: CheckoutOverviewTests
+Test Method: CO_011_unauthorizedDirectAccessIsGuarded
+Failure Reason: Expected unauthenticated checkout-overview access to redirect to login, but got: https://practice.qabrains.com/ecommerce/checkout-overview expected [true] but found [false]
+URL: https://practice.qabrains.com/ecommerce/checkout-overview
+Screenshot: D:\1. Intellij Idea\QA-Brains-Ecommerce\docs\Test Reports\failures\screenshots\CheckoutOverviewTests-CO_011_unauthorizedDirectAccessIsGuarded_2026-06-02_16-18-20-535.png
+Page Source: D:\1. Intellij Idea\QA-Brains-Ecommerce\docs\Test Reports\failures\page-source\CheckoutOverviewTests-CO_011_unauthorizedDirectAccessIsGuarded_2026-06-02_16-18-20-646.html
+Browser Info: {userAgent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/131.0.6778.33 Safari/537.36, viewport={width=1920, height=1080}, title=QA Practice Site}
+Console Logs: 
+  - Console logs require setup in BaseTest.beforeMethod()
+================================================================================
+
+================================================================================
+FAILURE REPORT: 2026-06-02T16:19:14.316451100
+Execution Mode: Headless
+Test Class: CheckoutOverviewTests
+Test Method: CO_014_overviewPageTitleAndBreadcrumbCorrect
+Failure Reason: Locator expected to be visible
+Call log:
+  - Locator.expect with timeout 5000ms
+  - waiting for locator("[data-testid='checkout-overview-heading'], h1:has-text('Checkout'), h1:has-text('Overview'), h2:has-text('Overview')").first()
+URL: https://practice.qabrains.com/ecommerce/checkout-overview
+Screenshot: D:\1. Intellij Idea\QA-Brains-Ecommerce\docs\Test Reports\failures\screenshots\CheckoutOverviewTests-CO_014_overviewPageTitleAndBreadcrumbCorrect_2026-06-02_16-19-14-317.png
+Page Source: D:\1. Intellij Idea\QA-Brains-Ecommerce\docs\Test Reports\failures\page-source\CheckoutOverviewTests-CO_014_overviewPageTitleAndBreadcrumbCorrect_2026-06-02_16-19-14-415.html
+Browser Info: {userAgent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/131.0.6778.33 Safari/537.36, viewport={width=1920, height=1080}, title=QA Practice Site}
+Console Logs: 
+  - Console logs require setup in BaseTest.beforeMethod()
+================================================================================
+
+================================================================================
+FAILURE REPORT: 2026-06-02T16:40:02.134588400
+Execution Mode: Headless
+Test Class: CheckoutCompleteTests
+Test Method: CC_001_completionHeadingAndConfirmationTextsVisible
+Failure Reason: Locator expected to be visible
+Call log:
+  - Locator.expect with timeout 5000ms
+  - waiting for locator("[data-testid='checkout-complete-heading'], h1:has-text('Checkout Complete'), h1:has-text('Complete')").first()
+URL: https://practice.qabrains.com/ecommerce/checkout-complete
+Screenshot: D:\1. Intellij Idea\QA-Brains-Ecommerce\docs\Test Reports\failures\screenshots\CheckoutCompleteTests-CC_001_completionHeadingAndConfirmationTextsVisible_2026-06-02_16-40-02-135.png
+Page Source: D:\1. Intellij Idea\QA-Brains-Ecommerce\docs\Test Reports\failures\page-source\CheckoutCompleteTests-CC_001_completionHeadingAndConfirmationTextsVisible_2026-06-02_16-40-02-298.html
+Browser Info: {userAgent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/131.0.6778.33 Safari/537.36, viewport={width=1920, height=1080}, title=QA Practice Site}
+Console Logs: 
+  - Console logs require setup in BaseTest.beforeMethod()
+================================================================================
+
+================================================================================
+FAILURE REPORT: 2026-06-02T16:40:21.828339700
+Execution Mode: Headless
+Test Class: CheckoutCompleteTests
+Test Method: CC_001S_smokeCompletionPageShowsThankYouConfirmation
+Failure Reason: Locator expected to be visible
+Call log:
+  - Locator.expect with timeout 5000ms
+  - waiting for locator("[data-testid='checkout-complete-heading'], h1:has-text('Checkout Complete'), h1:has-text('Complete')").first()
+URL: https://practice.qabrains.com/ecommerce/checkout-complete
+Screenshot: D:\1. Intellij Idea\QA-Brains-Ecommerce\docs\Test Reports\failures\screenshots\CheckoutCompleteTests-CC_001S_smokeCompletionPageShowsThankYouConfirmation_2026-06-02_16-40-21-830.png
+Page Source: D:\1. Intellij Idea\QA-Brains-Ecommerce\docs\Test Reports\failures\page-source\CheckoutCompleteTests-CC_001S_smokeCompletionPageShowsThankYouConfirmation_2026-06-02_16-40-21-938.html
+Browser Info: {userAgent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/131.0.6778.33 Safari/537.36, viewport={width=1920, height=1080}, title=QA Practice Site}
+Console Logs: 
+  - Console logs require setup in BaseTest.beforeMethod()
+================================================================================
+
+================================================================================
+FAILURE REPORT: 2026-06-02T16:41:37.326344400
+Execution Mode: Headless
+Test Class: CheckoutCompleteTests
+Test Method: CC_005_cartIsEmptyAfterOrderCompletion
+Failure Reason: Expected cart to be empty after order completion, but items were found. expected [true] but found [false]
+URL: https://practice.qabrains.com/ecommerce/cart
+Screenshot: D:\1. Intellij Idea\QA-Brains-Ecommerce\docs\Test Reports\failures\screenshots\CheckoutCompleteTests-CC_005_cartIsEmptyAfterOrderCompletion_2026-06-02_16-41-37-327.png
+Page Source: D:\1. Intellij Idea\QA-Brains-Ecommerce\docs\Test Reports\failures\page-source\CheckoutCompleteTests-CC_005_cartIsEmptyAfterOrderCompletion_2026-06-02_16-41-37-428.html
+Browser Info: {userAgent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/131.0.6778.33 Safari/537.36, viewport={width=1920, height=1080}, title=QA Practice Site}
+Console Logs: 
+  - Console logs require setup in BaseTest.beforeMethod()
+================================================================================
+
+================================================================================
+FAILURE REPORT: 2026-06-02T16:43:11.697509800
+Execution Mode: Headless
+Test Class: CheckoutInfoTests
+Test Method: CI_001_checkoutInfoPageAndFieldsVisible
+Failure Reason: Locator expected to be visible
+Call log:
+  - Locator.expect with timeout 5000ms
+  - waiting for locator("[data-testid='checkout-info-heading'], h1:has-text('Information'), h2:has-text('Information')").first()
+URL: https://practice.qabrains.com/ecommerce/checkout-info
+Screenshot: D:\1. Intellij Idea\QA-Brains-Ecommerce\docs\Test Reports\failures\screenshots\CheckoutInfoTests-CI_001_checkoutInfoPageAndFieldsVisible_2026-06-02_16-43-11-697.png
+Page Source: D:\1. Intellij Idea\QA-Brains-Ecommerce\docs\Test Reports\failures\page-source\CheckoutInfoTests-CI_001_checkoutInfoPageAndFieldsVisible_2026-06-02_16-43-11-827.html
+Browser Info: {userAgent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/131.0.6778.33 Safari/537.36, viewport={width=1920, height=1080}, title=QA Practice Site}
+Console Logs: 
+  - Console logs require setup in BaseTest.beforeMethod()
+================================================================================
+
+================================================================================
+FAILURE REPORT: 2026-06-02T16:43:24.952683500
+Execution Mode: Headless
+Test Class: CheckoutInfoTests
+Test Method: CI_001S_smokeCheckoutInfoPageLoadsWithAllFields
+Failure Reason: Locator expected to be visible
+Call log:
+  - Locator.expect with timeout 5000ms
+  - waiting for locator("[data-testid='checkout-info-heading'], h1:has-text('Information'), h2:has-text('Information')").first()
+URL: https://practice.qabrains.com/ecommerce/checkout-info
+Screenshot: D:\1. Intellij Idea\QA-Brains-Ecommerce\docs\Test Reports\failures\screenshots\CheckoutInfoTests-CI_001S_smokeCheckoutInfoPageLoadsWithAllFields_2026-06-02_16-43-24-953.png
+Page Source: D:\1. Intellij Idea\QA-Brains-Ecommerce\docs\Test Reports\failures\page-source\CheckoutInfoTests-CI_001S_smokeCheckoutInfoPageLoadsWithAllFields_2026-06-02_16-43-25-077.html
+Browser Info: {userAgent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/131.0.6778.33 Safari/537.36, viewport={width=1920, height=1080}, title=QA Practice Site}
+Console Logs: 
+  - Console logs require setup in BaseTest.beforeMethod()
+================================================================================
+
+================================================================================
+FAILURE REPORT: 2026-06-02T16:43:56.580419400
+Execution Mode: Headless
+Test Class: CheckoutCompleteTests
+Test Method: CC_010_completionPageRendersInMobileAndDesktopViewports
+Failure Reason: Locator expected to be visible
+Call log:
+  - Locator.expect with timeout 5000ms
+  - waiting for locator("[data-testid='checkout-complete-heading'], h1:has-text('Checkout Complete'), h1:has-text('Complete')").first()
+URL: https://practice.qabrains.com/ecommerce/checkout-complete
+Screenshot: D:\1. Intellij Idea\QA-Brains-Ecommerce\docs\Test Reports\failures\screenshots\CheckoutCompleteTests-CC_010_completionPageRendersInMobileAndDesktopViewports_2026-06-02_16-43-56-581.png
+Page Source: D:\1. Intellij Idea\QA-Brains-Ecommerce\docs\Test Reports\failures\page-source\CheckoutCompleteTests-CC_010_completionPageRendersInMobileAndDesktopViewports_2026-06-02_16-43-56-659.html
+Browser Info: {userAgent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/131.0.6778.33 Safari/537.36, viewport={width=390, height=844}, title=QA Practice Site}
+Console Logs: 
+  - Console logs require setup in BaseTest.beforeMethod()
+================================================================================
+
+================================================================================
+FAILURE REPORT: 2026-06-02T16:44:30.453071
+Execution Mode: Headless
+Test Class: CheckoutCompleteTests
+Test Method: CC_012_cartIsClearedAfterOrderCompletion
+Failure Reason: Expected cart to remain empty after order completion, but items were found. expected [true] but found [false]
+URL: https://practice.qabrains.com/ecommerce/cart
+Screenshot: D:\1. Intellij Idea\QA-Brains-Ecommerce\docs\Test Reports\failures\screenshots\CheckoutCompleteTests-CC_012_cartIsClearedAfterOrderCompletion_2026-06-02_16-44-30-453.png
+Page Source: D:\1. Intellij Idea\QA-Brains-Ecommerce\docs\Test Reports\failures\page-source\CheckoutCompleteTests-CC_012_cartIsClearedAfterOrderCompletion_2026-06-02_16-44-30-561.html
+Browser Info: {userAgent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/131.0.6778.33 Safari/537.36, viewport={width=1920, height=1080}, title=QA Practice Site}
+Console Logs: 
+  - Console logs require setup in BaseTest.beforeMethod()
+================================================================================
+
+================================================================================
+FAILURE REPORT: 2026-06-02T16:45:13.351295700
+Execution Mode: Headless
+Test Class: CheckoutOverviewTests
+Test Method: CO_001_overviewPageRendersProductSummary
+Failure Reason: Locator expected to be visible
+Call log:
+  - Locator.expect with timeout 5000ms
+  - waiting for locator("[data-testid='checkout-overview-heading'], h1:has-text('Checkout'), h1:has-text('Overview'), h2:has-text('Overview')").first()
+URL: https://practice.qabrains.com/ecommerce/checkout-overview
+Screenshot: D:\1. Intellij Idea\QA-Brains-Ecommerce\docs\Test Reports\failures\screenshots\CheckoutOverviewTests-CO_001_overviewPageRendersProductSummary_2026-06-02_16-45-13-351.png
+Page Source: D:\1. Intellij Idea\QA-Brains-Ecommerce\docs\Test Reports\failures\page-source\CheckoutOverviewTests-CO_001_overviewPageRendersProductSummary_2026-06-02_16-45-13-551.html
+Browser Info: {userAgent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/131.0.6778.33 Safari/537.36, viewport={width=1920, height=1080}, title=QA Practice Site}
+Console Logs: 
+  - Console logs require setup in BaseTest.beforeMethod()
+================================================================================
+
+================================================================================
+FAILURE REPORT: 2026-06-02T16:45:29.930739800
+Execution Mode: Headless
+Test Class: CheckoutOverviewTests
+Test Method: CO_001S_smokeOverviewPageRendersWithPrice
+Failure Reason: Locator expected to be visible
+Call log:
+  - Locator.expect with timeout 5000ms
+  - waiting for locator("[data-testid='checkout-overview-heading'], h1:has-text('Checkout'), h1:has-text('Overview'), h2:has-text('Overview')").first()
+URL: https://practice.qabrains.com/ecommerce/checkout-overview
+Screenshot: D:\1. Intellij Idea\QA-Brains-Ecommerce\docs\Test Reports\failures\screenshots\CheckoutOverviewTests-CO_001S_smokeOverviewPageRendersWithPrice_2026-06-02_16-45-29-930.png
+Page Source: D:\1. Intellij Idea\QA-Brains-Ecommerce\docs\Test Reports\failures\page-source\CheckoutOverviewTests-CO_001S_smokeOverviewPageRendersWithPrice_2026-06-02_16-45-30-033.html
+Browser Info: {userAgent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/131.0.6778.33 Safari/537.36, viewport={width=1920, height=1080}, title=QA Practice Site}
+Console Logs: 
+  - Console logs require setup in BaseTest.beforeMethod()
+================================================================================
+
+================================================================================
+FAILURE REPORT: 2026-06-02T16:45:48.995491700
+Execution Mode: Headless
+Test Class: CheckoutOverviewTests
+Test Method: CO_002_overviewPageRendersProductSummaryFunctional
+Failure Reason: Locator expected to be visible
+Call log:
+  - Locator.expect with timeout 5000ms
+  - waiting for locator("[data-testid='checkout-overview-heading'], h1:has-text('Checkout'), h1:has-text('Overview'), h2:has-text('Overview')").first()
+URL: https://practice.qabrains.com/ecommerce/checkout-overview
+Screenshot: D:\1. Intellij Idea\QA-Brains-Ecommerce\docs\Test Reports\failures\screenshots\CheckoutOverviewTests-CO_002_overviewPageRendersProductSummaryFunctional_2026-06-02_16-45-48-996.png
+Page Source: D:\1. Intellij Idea\QA-Brains-Ecommerce\docs\Test Reports\failures\page-source\CheckoutOverviewTests-CO_002_overviewPageRendersProductSummaryFunctional_2026-06-02_16-45-49-107.html
+Browser Info: {userAgent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/131.0.6778.33 Safari/537.36, viewport={width=1920, height=1080}, title=QA Practice Site}
+Console Logs: 
+  - Console logs require setup in BaseTest.beforeMethod()
+================================================================================
+
+================================================================================
+FAILURE REPORT: 2026-06-02T16:49:27.610971300
+Execution Mode: Headless
+Test Class: CheckoutOverviewTests
+Test Method: CO_014_overviewPageTitleAndBreadcrumbCorrect
+Failure Reason: Locator expected to be visible
+Call log:
+  - Locator.expect with timeout 5000ms
+  - waiting for locator("[data-testid='checkout-overview-heading'], h1:has-text('Checkout'), h1:has-text('Overview'), h2:has-text('Overview')").first()
+URL: https://practice.qabrains.com/ecommerce/checkout-overview
+Screenshot: D:\1. Intellij Idea\QA-Brains-Ecommerce\docs\Test Reports\failures\screenshots\CheckoutOverviewTests-CO_014_overviewPageTitleAndBreadcrumbCorrect_2026-06-02_16-49-27-611.png
+Page Source: D:\1. Intellij Idea\QA-Brains-Ecommerce\docs\Test Reports\failures\page-source\CheckoutOverviewTests-CO_014_overviewPageTitleAndBreadcrumbCorrect_2026-06-02_16-49-27-741.html
+Browser Info: {userAgent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/131.0.6778.33 Safari/537.36, viewport={width=1920, height=1080}, title=QA Practice Site}
+Console Logs: 
+  - Console logs require setup in BaseTest.beforeMethod()
+================================================================================
+
+================================================================================
+FAILURE REPORT: 2026-06-03T08:29:06.382716700
+Execution Mode: Headless
+Test Class: ProductDetailsTests
+Test Method: PDP_009_addToCartFromPdpUpdatesBadge
+Failure Reason: Cart badge is hidden; expected cart navigation to work after Add to Cart. URL: https://practice.qabrains.com/ecommerce/product-details?id=1 expected [true] but found [false]
+URL: https://practice.qabrains.com/ecommerce/product-details?id=1
+Screenshot: D:\1. Intellij Idea\QA-Brains-Ecommerce\docs\Test Reports\failures\screenshots\ProductDetailsTests-PDP_009_addToCartFromPdpUpdatesBadge_2026-06-03_08-29-06-383.png
+Page Source: D:\1. Intellij Idea\QA-Brains-Ecommerce\docs\Test Reports\failures\page-source\ProductDetailsTests-PDP_009_addToCartFromPdpUpdatesBadge_2026-06-03_08-29-06-534.html
+Browser Info: {userAgent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/131.0.6778.33 Safari/537.36, viewport={width=1920, height=1080}, title=QA Practice Site}
+Console Logs: 
+  - Console logs require setup in BaseTest.beforeMethod()
+================================================================================
+
+================================================================================
+FAILURE REPORT: 2026-06-03T08:29:12.661362500
+Execution Mode: Headless
+Test Class: ProductDetailsTests
+Test Method: PDP_009S_smokeAddToCartFromPdp
+Failure Reason: Cart badge is hidden; expected cart navigation to work after Add to Cart. URL: https://practice.qabrains.com/ecommerce/product-details?id=1 expected [true] but found [false]
+URL: https://practice.qabrains.com/ecommerce/product-details?id=1
+Screenshot: D:\1. Intellij Idea\QA-Brains-Ecommerce\docs\Test Reports\failures\screenshots\ProductDetailsTests-PDP_009S_smokeAddToCartFromPdp_2026-06-03_08-29-12-661.png
+Page Source: D:\1. Intellij Idea\QA-Brains-Ecommerce\docs\Test Reports\failures\page-source\ProductDetailsTests-PDP_009S_smokeAddToCartFromPdp_2026-06-03_08-29-12-855.html
+Browser Info: {userAgent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/131.0.6778.33 Safari/537.36, viewport={width=1920, height=1080}, title=QA Practice Site}
+Console Logs: 
+  - Console logs require setup in BaseTest.beforeMethod()
+================================================================================
+
+================================================================================
+FAILURE REPORT: 2026-06-03T08:29:31.859096700
+Execution Mode: Headless
+Test Class: CheckoutCompleteTests
+Test Method: CC_001_completionHeadingAndConfirmationTextsVisible
+Failure Reason: Locator expected to be visible
+Call log:
+  - Locator.expect with timeout 5000ms
+  - waiting for locator("[data-testid='checkout-complete-heading'], h1:has-text('Checkout Complete'), h1:has-text('Complete')").first()
+URL: https://practice.qabrains.com/ecommerce/checkout-complete
+Screenshot: D:\1. Intellij Idea\QA-Brains-Ecommerce\docs\Test Reports\failures\screenshots\CheckoutCompleteTests-CC_001_completionHeadingAndConfirmationTextsVisible_2026-06-03_08-29-31-859.png
+Page Source: D:\1. Intellij Idea\QA-Brains-Ecommerce\docs\Test Reports\failures\page-source\CheckoutCompleteTests-CC_001_completionHeadingAndConfirmationTextsVisible_2026-06-03_08-29-31-978.html
+Browser Info: {userAgent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/131.0.6778.33 Safari/537.36, viewport={width=1920, height=1080}, title=QA Practice Site}
+Console Logs: 
+  - Console logs require setup in BaseTest.beforeMethod()
+================================================================================
+
+================================================================================
+FAILURE REPORT: 2026-06-03T08:29:46.643890900
+Execution Mode: Headless
+Test Class: CheckoutCompleteTests
+Test Method: CC_001S_smokeCompletionPageShowsThankYouConfirmation
+Failure Reason: Locator expected to be visible
+Call log:
+  - Locator.expect with timeout 5000ms
+  - waiting for locator("[data-testid='checkout-complete-heading'], h1:has-text('Checkout Complete'), h1:has-text('Complete')").first()
+URL: https://practice.qabrains.com/ecommerce/checkout-complete
+Screenshot: D:\1. Intellij Idea\QA-Brains-Ecommerce\docs\Test Reports\failures\screenshots\CheckoutCompleteTests-CC_001S_smokeCompletionPageShowsThankYouConfirmation_2026-06-03_08-29-46-644.png
+Page Source: D:\1. Intellij Idea\QA-Brains-Ecommerce\docs\Test Reports\failures\page-source\CheckoutCompleteTests-CC_001S_smokeCompletionPageShowsThankYouConfirmation_2026-06-03_08-29-46-783.html
+Browser Info: {userAgent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/131.0.6778.33 Safari/537.36, viewport={width=1920, height=1080}, title=QA Practice Site}
+Console Logs: 
+  - Console logs require setup in BaseTest.beforeMethod()
+================================================================================
+
+================================================================================
+FAILURE REPORT: 2026-06-03T08:30:18.291346500
+Execution Mode: Headless
+Test Class: ProductDetailsTests
+Test Method: PDP_021_addToCartWithQuantityGreaterThanOne
+Failure Reason: Cart badge is hidden; expected cart navigation to work after Add to Cart. URL: https://practice.qabrains.com/ecommerce/product-details?id=1 expected [true] but found [false]
+URL: https://practice.qabrains.com/ecommerce/product-details?id=1
+Screenshot: D:\1. Intellij Idea\QA-Brains-Ecommerce\docs\Test Reports\failures\screenshots\ProductDetailsTests-PDP_021_addToCartWithQuantityGreaterThanOne_2026-06-03_08-30-18-292.png
+Page Source: D:\1. Intellij Idea\QA-Brains-Ecommerce\docs\Test Reports\failures\page-source\ProductDetailsTests-PDP_021_addToCartWithQuantityGreaterThanOne_2026-06-03_08-30-18-432.html
+Browser Info: {userAgent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/131.0.6778.33 Safari/537.36, viewport={width=1920, height=1080}, title=QA Practice Site}
+Console Logs: 
+  - Console logs require setup in BaseTest.beforeMethod()
+================================================================================
+
+================================================================================
+FAILURE REPORT: 2026-06-03T08:32:26.040060900
+Execution Mode: Headless
+Test Class: CheckoutCompleteTests
+Test Method: CC_010_completionPageRendersInMobileAndDesktopViewports
+Failure Reason: Locator expected to be visible
+Call log:
+  - Locator.expect with timeout 5000ms
+  - waiting for locator("[data-testid='checkout-complete-heading'], h1:has-text('Checkout Complete'), h1:has-text('Complete')").first()
+URL: https://practice.qabrains.com/ecommerce/checkout-complete
+Screenshot: D:\1. Intellij Idea\QA-Brains-Ecommerce\docs\Test Reports\failures\screenshots\CheckoutCompleteTests-CC_010_completionPageRendersInMobileAndDesktopViewports_2026-06-03_08-32-26-041.png
+Page Source: D:\1. Intellij Idea\QA-Brains-Ecommerce\docs\Test Reports\failures\page-source\CheckoutCompleteTests-CC_010_completionPageRendersInMobileAndDesktopViewports_2026-06-03_08-32-26-121.html
+Browser Info: {userAgent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/131.0.6778.33 Safari/537.36, viewport={width=390, height=844}, title=QA Practice Site}
+Console Logs: 
+  - Console logs require setup in BaseTest.beforeMethod()
+================================================================================
+
+================================================================================
+FAILURE REPORT: 2026-06-03T08:33:20.829500300
+Execution Mode: Headless
+Test Class: CheckoutInfoTests
+Test Method: CI_001_checkoutInfoPageAndFieldsVisible
+Failure Reason: Locator expected to be visible
+Call log:
+  - Locator.expect with timeout 5000ms
+  - waiting for locator("[data-testid='checkout-info-heading'], h1:has-text('Information'), h2:has-text('Information')").first()
+URL: https://practice.qabrains.com/ecommerce/checkout-info
+Screenshot: D:\1. Intellij Idea\QA-Brains-Ecommerce\docs\Test Reports\failures\screenshots\CheckoutInfoTests-CI_001_checkoutInfoPageAndFieldsVisible_2026-06-03_08-33-20-830.png
+Page Source: D:\1. Intellij Idea\QA-Brains-Ecommerce\docs\Test Reports\failures\page-source\CheckoutInfoTests-CI_001_checkoutInfoPageAndFieldsVisible_2026-06-03_08-33-20-984.html
+Browser Info: {userAgent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/131.0.6778.33 Safari/537.36, viewport={width=1920, height=1080}, title=QA Practice Site}
+Console Logs: 
+  - Console logs require setup in BaseTest.beforeMethod()
+================================================================================
+
+================================================================================
+FAILURE REPORT: 2026-06-03T08:33:36.571680900
+Execution Mode: Headless
+Test Class: CheckoutInfoTests
+Test Method: CI_001S_smokeCheckoutInfoPageLoadsWithAllFields
+Failure Reason: Locator expected to be visible
+Call log:
+  - Locator.expect with timeout 5000ms
+  - waiting for locator("[data-testid='checkout-info-heading'], h1:has-text('Information'), h2:has-text('Information')").first()
+URL: https://practice.qabrains.com/ecommerce/checkout-info
+Screenshot: D:\1. Intellij Idea\QA-Brains-Ecommerce\docs\Test Reports\failures\screenshots\CheckoutInfoTests-CI_001S_smokeCheckoutInfoPageLoadsWithAllFields_2026-06-03_08-33-36-572.png
+Page Source: D:\1. Intellij Idea\QA-Brains-Ecommerce\docs\Test Reports\failures\page-source\CheckoutInfoTests-CI_001S_smokeCheckoutInfoPageLoadsWithAllFields_2026-06-03_08-33-36-702.html
+Browser Info: {userAgent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/131.0.6778.33 Safari/537.36, viewport={width=1920, height=1080}, title=QA Practice Site}
+Console Logs: 
+  - Console logs require setup in BaseTest.beforeMethod()
+================================================================================
+
+================================================================================
+FAILURE REPORT: 2026-06-03T08:33:53.235758800
+Execution Mode: Headless
+Test Class: CheckoutInfoTests
+Test Method: CI_001_checkoutInfoPageAndFieldsVisible
+Failure Reason: Locator expected to be visible
+Call log:
+  - Locator.expect with timeout 5000ms
+  - waiting for locator("[data-testid='checkout-info-heading'], h1:has-text('Information'), h2:has-text('Information')").first()
+URL: https://practice.qabrains.com/ecommerce/checkout-info
+Screenshot: D:\1. Intellij Idea\QA-Brains-Ecommerce\docs\Test Reports\failures\screenshots\CheckoutInfoTests-CI_001_checkoutInfoPageAndFieldsVisible_2026-06-03_08-33-53-236.png
+Page Source: D:\1. Intellij Idea\QA-Brains-Ecommerce\docs\Test Reports\failures\page-source\CheckoutInfoTests-CI_001_checkoutInfoPageAndFieldsVisible_2026-06-03_08-33-53-380.html
+Browser Info: {userAgent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/131.0.6778.33 Safari/537.36, viewport={width=1920, height=1080}, title=QA Practice Site}
+Console Logs: 
+  - Console logs require setup in BaseTest.beforeMethod()
+================================================================================
+
+================================================================================
+FAILURE REPORT: 2026-06-03T08:34:09.722045900
+Execution Mode: Headless
+Test Class: CheckoutInfoTests
+Test Method: CI_001S_smokeCheckoutInfoPageLoadsWithAllFields
+Failure Reason: Locator expected to be visible
+Call log:
+  - Locator.expect with timeout 5000ms
+  - waiting for locator("[data-testid='checkout-info-heading'], h1:has-text('Information'), h2:has-text('Information')").first()
+URL: https://practice.qabrains.com/ecommerce/checkout-info
+Screenshot: D:\1. Intellij Idea\QA-Brains-Ecommerce\docs\Test Reports\failures\screenshots\CheckoutInfoTests-CI_001S_smokeCheckoutInfoPageLoadsWithAllFields_2026-06-03_08-34-09-723.png
+Page Source: D:\1. Intellij Idea\QA-Brains-Ecommerce\docs\Test Reports\failures\page-source\CheckoutInfoTests-CI_001S_smokeCheckoutInfoPageLoadsWithAllFields_2026-06-03_08-34-09-852.html
+Browser Info: {userAgent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/131.0.6778.33 Safari/537.36, viewport={width=1920, height=1080}, title=QA Practice Site}
+Console Logs: 
+  - Console logs require setup in BaseTest.beforeMethod()
+================================================================================
+
+================================================================================
+FAILURE REPORT: 2026-06-03T08:37:18.525367600
+Execution Mode: Headless
+Test Class: CheckoutOverviewTests
+Test Method: CO_001_overviewPageRendersProductSummary
+Failure Reason: Locator expected to be visible
+Call log:
+  - Locator.expect with timeout 5000ms
+  - waiting for locator("[data-testid='checkout-overview-heading'], h1:has-text('Checkout'), h1:has-text('Overview'), h2:has-text('Overview')").first()
+URL: https://practice.qabrains.com/ecommerce/checkout-overview
+Screenshot: D:\1. Intellij Idea\QA-Brains-Ecommerce\docs\Test Reports\failures\screenshots\CheckoutOverviewTests-CO_001_overviewPageRendersProductSummary_2026-06-03_08-37-18-526.png
+Page Source: D:\1. Intellij Idea\QA-Brains-Ecommerce\docs\Test Reports\failures\page-source\CheckoutOverviewTests-CO_001_overviewPageRendersProductSummary_2026-06-03_08-37-18-645.html
+Browser Info: {userAgent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/131.0.6778.33 Safari/537.36, viewport={width=1920, height=1080}, title=QA Practice Site}
+Console Logs: 
+  - Console logs require setup in BaseTest.beforeMethod()
+================================================================================
+
+================================================================================
+FAILURE REPORT: 2026-06-03T08:37:36.222571400
+Execution Mode: Headless
+Test Class: CheckoutOverviewTests
+Test Method: CO_001S_smokeOverviewPageRendersWithPrice
+Failure Reason: Locator expected to be visible
+Call log:
+  - Locator.expect with timeout 5000ms
+  - waiting for locator("[data-testid='checkout-overview-heading'], h1:has-text('Checkout'), h1:has-text('Overview'), h2:has-text('Overview')").first()
+URL: https://practice.qabrains.com/ecommerce/checkout-overview
+Screenshot: D:\1. Intellij Idea\QA-Brains-Ecommerce\docs\Test Reports\failures\screenshots\CheckoutOverviewTests-CO_001S_smokeOverviewPageRendersWithPrice_2026-06-03_08-37-36-223.png
+Page Source: D:\1. Intellij Idea\QA-Brains-Ecommerce\docs\Test Reports\failures\page-source\CheckoutOverviewTests-CO_001S_smokeOverviewPageRendersWithPrice_2026-06-03_08-37-36-349.html
+Browser Info: {userAgent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/131.0.6778.33 Safari/537.36, viewport={width=1920, height=1080}, title=QA Practice Site}
+Console Logs: 
+  - Console logs require setup in BaseTest.beforeMethod()
+================================================================================
+
+================================================================================
+FAILURE REPORT: 2026-06-03T08:37:52.348316300
+Execution Mode: Headless
+Test Class: CheckoutOverviewTests
+Test Method: CO_002_overviewPageRendersProductSummaryFunctional
+Failure Reason: Locator expected to be visible
+Call log:
+  - Locator.expect with timeout 5000ms
+  - waiting for locator("[data-testid='checkout-overview-heading'], h1:has-text('Checkout'), h1:has-text('Overview'), h2:has-text('Overview')").first()
+URL: https://practice.qabrains.com/ecommerce/checkout-overview
+Screenshot: D:\1. Intellij Idea\QA-Brains-Ecommerce\docs\Test Reports\failures\screenshots\CheckoutOverviewTests-CO_002_overviewPageRendersProductSummaryFunctional_2026-06-03_08-37-52-349.png
+Page Source: D:\1. Intellij Idea\QA-Brains-Ecommerce\docs\Test Reports\failures\page-source\CheckoutOverviewTests-CO_002_overviewPageRendersProductSummaryFunctional_2026-06-03_08-37-52-438.html
+Browser Info: {userAgent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/131.0.6778.33 Safari/537.36, viewport={width=1920, height=1080}, title=QA Practice Site}
+Console Logs: 
+  - Console logs require setup in BaseTest.beforeMethod()
+================================================================================
+
+================================================================================
+FAILURE REPORT: 2026-06-03T08:41:36.893187500
+Execution Mode: Headless
+Test Class: CheckoutOverviewTests
+Test Method: CO_010_overviewRemainsStableWhenBackendFails
+Failure Reason: Error {
+  message='net::ERR_CONNECTION_TIMED_OUT at https://practice.qabrains.com/ecommerce/checkout-overview
+  name='Error
+  stack='Error: net::ERR_CONNECTION_TIMED_OUT at https://practice.qabrains.com/ecommerce/checkout-overview
+    at FrameSession._navigate (C:\Users\RAIYAN~1\AppData\Local\Temp\playwright-java-15641203777070330325\package\lib\server\chromium\crPage.js:512:35)
+    at async Frame._gotoAction (C:\Users\RAIYAN~1\AppData\Local\Temp\playwright-java-15641203777070330325\package\lib\server\frames.js:540:28)
+}
+Call log:
+-   - navigating to "https://practice.qabrains.com/ecommerce/checkout-overview", waiting until "domcontentloaded"
+
+URL: https://practice.qabrains.com/ecommerce/checkout-overview
+Screenshot: D:\1. Intellij Idea\QA-Brains-Ecommerce\docs\Test Reports\failures\screenshots\CheckoutOverviewTests-CO_010_overviewRemainsStableWhenBackendFails_2026-06-03_08-41-36-894.png
+Page Source: D:\1. Intellij Idea\QA-Brains-Ecommerce\docs\Test Reports\failures\page-source\CheckoutOverviewTests-CO_010_overviewRemainsStableWhenBackendFails_2026-06-03_08-41-37-100.html
+Browser Info: {userAgent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/131.0.6778.33 Safari/537.36, viewport={width=1920, height=1080}, title=}
+Console Logs: 
+  - Console logs require setup in BaseTest.beforeMethod()
+================================================================================
+
+================================================================================
+FAILURE REPORT: 2026-06-03T08:50:22.120018500
+Execution Mode: Headless
+Test Class: ProductDetailsTests
+Test Method: PDP_009_addToCartFromPdpUpdatesBadge
+Failure Reason: Cart badge is hidden; expected cart navigation to work after Add to Cart. URL: https://practice.qabrains.com/ecommerce/product-details?id=1 expected [true] but found [false]
+URL: https://practice.qabrains.com/ecommerce/product-details?id=1
+Screenshot: D:\1. Intellij Idea\QA-Brains-Ecommerce\docs\Test Reports\failures\screenshots\ProductDetailsTests-PDP_009_addToCartFromPdpUpdatesBadge_2026-06-03_08-50-22-121.png
+Page Source: D:\1. Intellij Idea\QA-Brains-Ecommerce\docs\Test Reports\failures\page-source\ProductDetailsTests-PDP_009_addToCartFromPdpUpdatesBadge_2026-06-03_08-50-22-273.html
+Browser Info: {userAgent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/131.0.6778.33 Safari/537.36, viewport={width=1920, height=1080}, title=QA Practice Site}
+Console Logs: 
+  - Console logs require setup in BaseTest.beforeMethod()
+================================================================================
+
+================================================================================
+FAILURE REPORT: 2026-06-03T08:50:27.505464300
+Execution Mode: Headless
+Test Class: ProductDetailsTests
+Test Method: PDP_009S_smokeAddToCartFromPdp
+Failure Reason: Cart badge is hidden; expected cart navigation to work after Add to Cart. URL: https://practice.qabrains.com/ecommerce/product-details?id=1 expected [true] but found [false]
+URL: https://practice.qabrains.com/ecommerce/product-details?id=1
+Screenshot: D:\1. Intellij Idea\QA-Brains-Ecommerce\docs\Test Reports\failures\screenshots\ProductDetailsTests-PDP_009S_smokeAddToCartFromPdp_2026-06-03_08-50-27-505.png
+Page Source: D:\1. Intellij Idea\QA-Brains-Ecommerce\docs\Test Reports\failures\page-source\ProductDetailsTests-PDP_009S_smokeAddToCartFromPdp_2026-06-03_08-50-27-643.html
+Browser Info: {userAgent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/131.0.6778.33 Safari/537.36, viewport={width=1920, height=1080}, title=QA Practice Site}
+Console Logs: 
+  - Console logs require setup in BaseTest.beforeMethod()
+================================================================================
+
+================================================================================
+FAILURE REPORT: 2026-06-03T08:50:55.752679700
+Execution Mode: Headless
+Test Class: ProductDetailsTests
+Test Method: PDP_021_addToCartWithQuantityGreaterThanOne
+Failure Reason: Cart badge is hidden; expected cart navigation to work after Add to Cart. URL: https://practice.qabrains.com/ecommerce/product-details?id=1 expected [true] but found [false]
+URL: https://practice.qabrains.com/ecommerce/product-details?id=1
+Screenshot: D:\1. Intellij Idea\QA-Brains-Ecommerce\docs\Test Reports\failures\screenshots\ProductDetailsTests-PDP_021_addToCartWithQuantityGreaterThanOne_2026-06-03_08-50-55-752.png
+Page Source: D:\1. Intellij Idea\QA-Brains-Ecommerce\docs\Test Reports\failures\page-source\ProductDetailsTests-PDP_021_addToCartWithQuantityGreaterThanOne_2026-06-03_08-50-55-894.html
+Browser Info: {userAgent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/131.0.6778.33 Safari/537.36, viewport={width=1920, height=1080}, title=QA Practice Site}
+Console Logs: 
+  - Console logs require setup in BaseTest.beforeMethod()
+================================================================================
+
+================================================================================
+FAILURE REPORT: 2026-06-03T10:00:31.972095200
+Execution Mode: Headless
+Test Class: ProductDetailsTests
+Test Method: PDP_011_unauthenticatedAccessIsGuarded
+Failure Reason: Expected unauthenticated access to be redirected to login, but got: https://practice.qabrains.com/ecommerce/product-details?id=1 expected [true] but found [false]
+URL: https://practice.qabrains.com/ecommerce/product-details?id=1
+Screenshot: D:\1. Intellij Idea\QA-Brains-Ecommerce\docs\Test Reports\failures\screenshots\ProductDetailsTests-PDP_011_unauthenticatedAccessIsGuarded_2026-06-03_10-00-31-972.png
+Page Source: D:\1. Intellij Idea\QA-Brains-Ecommerce\docs\Test Reports\failures\page-source\ProductDetailsTests-PDP_011_unauthenticatedAccessIsGuarded_2026-06-03_10-00-32-207.html
+Browser Info: {userAgent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/131.0.6778.33 Safari/537.36, viewport={width=1920, height=1080}, title=QA Practice Site}
+Console Logs: 
+  - Console logs require setup in BaseTest.beforeMethod()
+================================================================================

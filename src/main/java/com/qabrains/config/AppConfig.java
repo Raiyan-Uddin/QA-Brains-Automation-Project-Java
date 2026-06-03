@@ -24,14 +24,13 @@ public final class AppConfig {
     // ========================
     // PAGE URLs
     // ========================
-    public static final String LOGIN_URL = BASE_URL + "/login";
-    public static final String HOME_URL = BASE_URL;
-    // Add new page URLs here as you add modules:
-    // public static final String CART_URL = BASE_URL + "/cart";
-    // public static final String PRODUCT_DETAILS_URL = BASE_URL + "/product-details";
-    // public static final String CHECKOUT_INFO_URL = BASE_URL + "/checkout-info";
-    // public static final String CHECKOUT_OVERVIEW_URL = BASE_URL + "/checkout-overview";
-    // public static final String CHECKOUT_COMPLETE_URL = BASE_URL + "/checkout-complete";
+    public static final String LOGIN_URL      = BASE_URL + "/login";
+    public static final String HOME_URL       = BASE_URL;
+    public static final String CART_URL       = BASE_URL + "/cart";
+    public static final String PRODUCT_DETAILS_URL = BASE_URL + "/product-details";
+    public static final String CHECKOUT_INFO_URL     = BASE_URL + "/checkout-info";
+    public static final String CHECKOUT_OVERVIEW_URL = BASE_URL + "/checkout-overview";
+    public static final String CHECKOUT_COMPLETE_URL = BASE_URL + "/checkout-complete";
 
     // ========================
     // TEST CREDENTIALS
@@ -46,8 +45,8 @@ public final class AppConfig {
     // BROWSER SETTINGS
     // ========================
     public static final String BROWSER_TYPE = "chromium";  // Only Chromium browser
-    public static final boolean HEADLESS = false;          // Set true for CI/CD
-    public static final int SLOW_MO = 500;                 // Milliseconds between actions
+    public static final boolean HEADLESS = true;           // Set true for faster execution
+    public static final int SLOW_MO = 0;                   // Milliseconds between actions (0 for headless speed)
     public static final int DEFAULT_TIMEOUT = 30000;       // 30 seconds
     public static final int VIEWPORT_WIDTH = 1920;
     public static final int VIEWPORT_HEIGHT = 1080;
@@ -55,10 +54,23 @@ public final class AppConfig {
     // ========================
     // LOGIN PAGE EXPECTED VALUES
     // ========================
-    public static final String LOGIN_HEADING_TEXT = "Login";
-    public static final String EMAIL_LABEL_TEXT = "Email";
+    public static final String LOGIN_HEADING_TEXT  = "Login";
+    public static final String EMAIL_LABEL_TEXT    = "Email";
     public static final String PASSWORD_LABEL_TEXT = "Password";
-    public static final String LOGIN_BUTTON_TEXT = "Login";
-    public static final String EMAIL_PLACEHOLDER = "eg. user@user.com";
+    public static final String LOGIN_BUTTON_TEXT   = "Login";
+    public static final String EMAIL_PLACEHOLDER   = "eg. user@user.com";
     public static final String PASSWORD_PLACEHOLDER = "*******";
+
+    // ========================
+    // HOME PAGE EXPECTED VALUES
+    // ========================
+    public static final String HOME_PRODUCTS_HEADING = "Products";
+
+    // ========================
+    // PRODUCT DETAILS — TEST DATA
+    // ========================
+    public static final int PRODUCT_ID_VALID   = 1;
+    public static final int PRODUCT_ID_SECOND  = 2;
+    public static final int PRODUCT_ID_INVALID = -1;
+    public static final int PRODUCT_ID_ZERO    = 0;
 }
