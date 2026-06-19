@@ -14,6 +14,9 @@ You are responsible for reading the Maven Surefire XML reports from `target/sure
 - Generate a self-contained HTML file (inline CSS + JS only — no CDN links).
 - Save it to `docs/Test Reports/Test-Report-Latest.html`.
 - Overwrite that same HTML file on every run so it always reflects the latest executed tests.
+- Include Allure artifact paths in the final confirmation:
+  - Results: `allure/results/`
+  - Static report: `allure/report/`
 - Confirm the output path and print the final summary line when done.
 - If `target/surefire-reports/` is empty, print an error and stop — do not run `mvn test`.
 

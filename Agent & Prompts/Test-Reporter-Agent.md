@@ -17,6 +17,7 @@
 - Parse all test modules, their methods, statuses, durations, and failure messages.
 - Produce a single self-contained HTML report in `docs/Test Reports/`.
 - Always update the existing shared report file: `docs/Test Reports/Test-Report-Latest.html`.
+- Keep Allure artifacts in `allure/` (`allure/results` and `allure/report`).
 
 ---
 
@@ -144,6 +145,7 @@ Failure blocks: monospace pre, light red background
 ## Output Rules
 - Only write to `docs/Test Reports/`.
 - Always overwrite `docs/Test Reports/Test-Report-Latest.html`.
+- All Allure files must stay under `allure/`.
 - Do not create a new timestamped HTML file unless the user explicitly asks for a separate historical copy.
 - The HTML file must open correctly in any browser without an internet connection.
 - Do not modify any file in `src/`, `target/`, or `docs/test cases/`.

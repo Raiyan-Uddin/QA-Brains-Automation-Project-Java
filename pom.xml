@@ -24,6 +24,10 @@
         <playwright.version>1.49.0</playwright.version>
         <testng.version>7.10.2</testng.version>
         <maven.surefire.version>3.2.5</maven.surefire.version>
+        <allure.version>2.29.1</allure.version>
+        <allure.maven.version>2.12.0</allure.maven.version>
+        <allure.results.directory>${project.basedir}/allure/results</allure.results.directory>
+        <allure.report.directory>${project.basedir}/allure/report</allure.report.directory>
     </properties>
 
     <dependencies>
@@ -49,6 +53,14 @@
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-simple</artifactId>
             <version>1.7.36</version>
+        </dependency>
+
+        <!-- Allure reporting for TestNG -->
+        <dependency>
+            <groupId>io.qameta.allure</groupId>
+            <artifactId>allure-testng</artifactId>
+            <version>${allure.version}</version>
+            <scope>test</scope>
         </dependency>
     </dependencies>
 
@@ -76,9 +88,33 @@
                     </suiteXmlFiles>
                     <!-- Force UTF-8 for emoji/unicode in terminal output -->
                     <argLine>-Dfile.encoding=UTF-8 -Dstdout.encoding=UTF-8 -Dstderr.encoding=UTF-8 -Dcom.ibm.tools.attach.enable=yes</argLine>
+                    <systemPropertyVariables>
+                        <allure.results.directory>${allure.results.directory}</allure.results.directory>
+                    </systemPropertyVariables>
                     <!-- Use plain text reports for better terminal visibility -->
                     <useFile>false</useFile>
                 </configuration>
+            </plugin>
+
+            <!-- Generate static Allure report after test execution -->
+            <plugin>
+                <groupId>io.qameta.allure</groupId>
+                <artifactId>allure-maven</artifactId>
+                <version>${allure.maven.version}</version>
+                <configuration>
+                    <installDirectory>${project.basedir}/allure/.allure</installDirectory>
+                    <resultsDirectory>${allure.results.directory}</resultsDirectory>
+                    <reportDirectory>${allure.report.directory}</reportDirectory>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>generate-allure-report-after-test</id>
+                        <phase>test</phase>
+                        <goals>
+                            <goal>report</goal>
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
     </build>

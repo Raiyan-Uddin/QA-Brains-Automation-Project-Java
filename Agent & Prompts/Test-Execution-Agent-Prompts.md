@@ -8,6 +8,7 @@ You are responsible only for executing project code/tests using terminal command
 ### Instructions
 - Run commands from the project root directory.
 - Use safe, copyable terminal commands.
+- For full-suite runs, prefer `.\allure\run-suite-with-allure.ps1`.
 - Capture pass/fail outcomes and key errors.
 - Report where detailed outputs are stored.
 - Do not edit code or test-case TXT files.

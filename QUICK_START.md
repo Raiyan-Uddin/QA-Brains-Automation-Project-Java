@@ -12,6 +12,11 @@ This root guide points to the reorganized notes area.
 mvn clean test
 ```
 
+## Run tests + auto-open Allure
+```powershell
+.\allure\run-suite-with-allure.ps1
+```
+
 ## Open failure reports
 ```powershell
 .\open-failure-report.ps1

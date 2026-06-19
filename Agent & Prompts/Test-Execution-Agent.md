@@ -11,6 +11,7 @@
 ## Scope
 - Execute Maven/TestNG commands from the project root.
 - Execute module-specific test runs when requested.
+- For full-suite execution, use the Allure wrapper script so report generation and serving are automatic.
 - Capture and report command output, pass/fail status, and key errors.
 
 ## Responsibilities
@@ -32,7 +33,7 @@
 - Do not change project files unless explicitly instructed outside this agent scope.
 
 ## Example Commands
-- `mvn test`
+- `.\allure\run-suite-with-allure.ps1`
 - `mvn "-Dtest=com.qabrains.tests.login.LoginTests" test`
 - `mvn clean test`
 

@@ -20,7 +20,6 @@ import java.util.List;
 /**
  * BaseTest is the parent class for all test classes.
  *
- * Beginner flow (high level):
  * 1) BeforeSuite  -> print framework start message
  * 2) BeforeClass  -> create Playwright and launch browser (once per class)
  * 3) BeforeMethod -> create fresh context/page (before every test)

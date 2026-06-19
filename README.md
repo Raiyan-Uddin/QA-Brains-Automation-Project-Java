@@ -21,6 +21,8 @@
 - Main reports folder: `docs/Test Reports/`
 - Latest full-run report (auto-updated): `docs/Test Reports/Test-Report-Latest.html`
 - Failure report artifacts: `docs/Test Reports/failures/`
+- Allure results: `allure/results/`
+- Allure static report: `allure/report/`
 - Project notes index: `docs/project-notes/INDEX.md`
 - Implementation notes map: `docs/project-notes/IMPLEMENTATION_INDEX.md`
 - Ratings index: `docs/project-notes/RATING_INDEX.md`
@@ -52,3 +54,9 @@ Use Maven as usual from project root:
 ```bash
 mvn clean test
 ```
+
+## Run Suite + Auto Serve Allure
+```powershell
+.\allure\run-suite-with-allure.ps1
+```
+
