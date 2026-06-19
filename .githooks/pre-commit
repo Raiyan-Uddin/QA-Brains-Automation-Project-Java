@@ -1,0 +1,31 @@
+#!/usr/bin/env sh
+
+# Blocks common IDE/cache artifacts from being committed.
+set -eu
+
+STAGED_FILES="$(git diff --cached --name-only --diff-filter=ACMR)"
+[ -z "$STAGED_FILES" ] && exit 0
+
+BLOCKED=""
+for file in $STAGED_FILES; do
+  case "$file" in
+    .idea/workspace.xml|.idea/csv-editor.xml|.idea/modules.xml|.idea/jarRepositories.xml|.idea/compiler.xml|*.iml|*.iws|*.ipr|target/*|allure/.allure/*)
+      BLOCKED="$BLOCKED\n  - $file"
+      ;;
+  esac
+done
+
+if [ -n "$BLOCKED" ]; then
+  echo "ERROR: Commit blocked: staged IDE/cache artifacts detected:"
+  # shellcheck disable=SC2059
+  printf "$BLOCKED\n"
+  echo ""
+  echo "Remove them from the index and retry, for example:"
+  echo "  git restore --staged <file>"
+  exit 1
+fi
+
+exit 0
+
+
+

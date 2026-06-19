@@ -15,6 +15,13 @@ target/
 /allure/.allure/
 
 ### IntelliJ IDEA ###
+.idea/*
+!.idea/.gitignore
+!.idea/misc.xml
+!.idea/vcs.xml
+!.idea/encodings.xml
+.idea/workspace.xml
+.idea/csv-editor.xml
 .idea/modules.xml
 .idea/jarRepositories.xml
 .idea/compiler.xml

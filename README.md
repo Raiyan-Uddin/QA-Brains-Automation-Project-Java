@@ -23,6 +23,7 @@
 - Failure report artifacts: `docs/Test Reports/failures/`
 - Allure results: `allure/results/`
 - Allure static report: `allure/report/`
+- Git auth workflow: `docs/GIT_AUTH.md`
 - Project notes index: `docs/project-notes/INDEX.md`
 - Implementation notes map: `docs/project-notes/IMPLEMENTATION_INDEX.md`
 - Ratings index: `docs/project-notes/RATING_INDEX.md`
@@ -58,5 +59,10 @@ mvn clean test
 ## Run Suite + Auto Serve Allure
 ```powershell
 .\allure\run-suite-with-allure.ps1
+```
+
+## Install Git Hooks
+```powershell
+.\scripts\install-git-hooks.ps1
 ```
 
