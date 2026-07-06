@@ -17,6 +17,7 @@ You are responsible for reading the Maven Surefire XML reports from `target/sure
 - Include Allure artifact paths in the final confirmation:
   - Results: `allure/results/`
   - Static report: `allure/report/`
+- Assume the default execution command is `mvn clean test`, which refreshes Allure artifacts before report generation.
 - Confirm the output path and print the final summary line when done.
 - If `target/surefire-reports/` is empty, print an error and stop — do not run `mvn test`.
 

@@ -66,6 +66,23 @@
 
     <build>
         <plugins>
+            <!-- Clean plugin: remove stale Allure artifacts on mvn clean -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-clean-plugin</artifactId>
+                <version>3.3.2</version>
+                <configuration>
+                    <filesets>
+                        <fileset>
+                            <directory>${allure.results.directory}</directory>
+                        </fileset>
+                        <fileset>
+                            <directory>${allure.report.directory}</directory>
+                        </fileset>
+                    </filesets>
+                </configuration>
+            </plugin>
+
             <!-- Maven Compiler Plugin -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -113,6 +130,32 @@
                         <goals>
                             <goal>report</goal>
                         </goals>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <!-- Auto-open generated Allure report after tests -->
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <version>3.3.0</version>
+                <executions>
+                    <execution>
+                        <id>open-allure-report-after-test</id>
+                        <phase>test</phase>
+                        <goals>
+                            <goal>exec</goal>
+                        </goals>
+                        <configuration>
+                            <executable>powershell</executable>
+                            <arguments>
+                                <argument>-NoProfile</argument>
+                                <argument>-ExecutionPolicy</argument>
+                                <argument>Bypass</argument>
+                                <argument>-Command</argument>
+                                <argument>$report = Resolve-Path '${allure.report.directory}\index.html' -ErrorAction SilentlyContinue; if ($report) { Start-Process $report.Path }</argument>
+                            </arguments>
+                        </configuration>
                     </execution>
                 </executions>
             </plugin>

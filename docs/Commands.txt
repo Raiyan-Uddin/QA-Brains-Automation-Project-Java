@@ -1,3 +1,3 @@
-1. To run the test:
-chcp 65001 | Out-Null; cd "D:\1. Intellij Idea\QA-Brains-Ecommerce"; mvn test
+1. To run the test (always refresh Allure report and auto-open in browser):
+chcp 65001 | Out-Null; cd "D:\1. Intellij Idea\QA-Brains-Ecommerce"; mvn clean test
 

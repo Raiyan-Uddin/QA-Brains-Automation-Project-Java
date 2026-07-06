@@ -860,3 +860,185 @@ Browser Info: {userAgent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/5
 Console Logs: 
   - Console logs require setup in BaseTest.beforeMethod()
 ================================================================================
+
+================================================================================
+FAILURE REPORT: 2026-07-02T08:43:37.286589300
+Execution Mode: Headless
+Test Class: AccessibilityTests
+Test Method: ACC_001S_smokeVerifyHeadingHierarchy
+Failure Reason: Page should have exactly one H1 heading for accessibility expected [1] but found [0]
+URL: https://practice.qabrains.com/ecommerce/login
+Screenshot: D:\1. Intellij Idea\QA-Brains-Ecommerce\docs\Test Reports\failures\screenshots\AccessibilityTests-ACC_001S_smokeVerifyHeadingHierarchy_2026-07-02_08-43-37-287.png
+Page Source: D:\1. Intellij Idea\QA-Brains-Ecommerce\docs\Test Reports\failures\page-source\AccessibilityTests-ACC_001S_smokeVerifyHeadingHierarchy_2026-07-02_08-43-37-421.html
+Browser Info: {userAgent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/131.0.6778.33 Safari/537.36, viewport={width=1920, height=1080}, title=QA Practice Site}
+Console Logs: 
+  - Console logs require setup in BaseTest.beforeMethod()
+================================================================================
+
+================================================================================
+FAILURE REPORT: 2026-07-02T08:43:40.179881700
+Execution Mode: Headless
+Test Class: AccessibilityTests
+Test Method: ACC_001_verifyHeadingHierarchy
+Failure Reason: Page should have exactly one H1 heading for accessibility expected [1] but found [0]
+URL: https://practice.qabrains.com/ecommerce/login
+Screenshot: D:\1. Intellij Idea\QA-Brains-Ecommerce\docs\Test Reports\failures\screenshots\AccessibilityTests-ACC_001_verifyHeadingHierarchy_2026-07-02_08-43-40-179.png
+Page Source: D:\1. Intellij Idea\QA-Brains-Ecommerce\docs\Test Reports\failures\page-source\AccessibilityTests-ACC_001_verifyHeadingHierarchy_2026-07-02_08-43-40-337.html
+Browser Info: {userAgent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/131.0.6778.33 Safari/537.36, viewport={width=1920, height=1080}, title=QA Practice Site}
+Console Logs: 
+  - Console logs require setup in BaseTest.beforeMethod()
+================================================================================
+
+================================================================================
+FAILURE REPORT: 2026-07-02T08:43:45.646695200
+Execution Mode: Headless
+Test Class: AccessibilityTests
+Test Method: ACC_005_verifyColorNotOnlyIndicator
+Failure Reason: Error messages must use text and/or icons in addition to color expected [true] but found [false]
+URL: https://practice.qabrains.com/ecommerce/login
+Screenshot: D:\1. Intellij Idea\QA-Brains-Ecommerce\docs\Test Reports\failures\screenshots\AccessibilityTests-ACC_005_verifyColorNotOnlyIndicator_2026-07-02_08-43-45-647.png
+Page Source: D:\1. Intellij Idea\QA-Brains-Ecommerce\docs\Test Reports\failures\page-source\AccessibilityTests-ACC_005_verifyColorNotOnlyIndicator_2026-07-02_08-43-45-751.html
+Browser Info: {userAgent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/131.0.6778.33 Safari/537.36, viewport={width=1920, height=1080}, title=QA Practice Site}
+Console Logs: 
+  - Console logs require setup in BaseTest.beforeMethod()
+================================================================================
+
+================================================================================
+FAILURE REPORT: 2026-07-02T08:43:47.918707100
+Execution Mode: Headless
+Test Class: AccessibilityTests
+Test Method: ACC_006_verifyLinkDescriptiveText
+Failure Reason: Links must have descriptive text, not generic 'click here' or aria-label expected [true] but found [false]
+URL: https://practice.qabrains.com/ecommerce
+Screenshot: D:\1. Intellij Idea\QA-Brains-Ecommerce\docs\Test Reports\failures\screenshots\AccessibilityTests-ACC_006_verifyLinkDescriptiveText_2026-07-02_08-43-47-918.png
+Page Source: D:\1. Intellij Idea\QA-Brains-Ecommerce\docs\Test Reports\failures\page-source\AccessibilityTests-ACC_006_verifyLinkDescriptiveText_2026-07-02_08-43-48-128.html
+Browser Info: {userAgent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/131.0.6778.33 Safari/537.36, viewport={width=1920, height=1080}, title=QA Practice Site}
+Console Logs: 
+  - Console logs require setup in BaseTest.beforeMethod()
+================================================================================
+
+================================================================================
+FAILURE REPORT: 2026-07-02T08:43:48.498131600
+Execution Mode: Headless
+Test Class: AccessibilityTests
+Test Method: ACC_007_verifyButtonLabels
+Failure Reason: All buttons must have visible text label, aria-label, or title attribute expected [true] but found [false]
+URL: https://practice.qabrains.com/ecommerce/login
+Screenshot: D:\1. Intellij Idea\QA-Brains-Ecommerce\docs\Test Reports\failures\screenshots\AccessibilityTests-ACC_007_verifyButtonLabels_2026-07-02_08-43-48-498.png
+Page Source: D:\1. Intellij Idea\QA-Brains-Ecommerce\docs\Test Reports\failures\page-source\AccessibilityTests-ACC_007_verifyButtonLabels_2026-07-02_08-43-48-624.html
+Browser Info: {userAgent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/131.0.6778.33 Safari/537.36, viewport={width=1920, height=1080}, title=QA Practice Site}
+Console Logs: 
+  - Console logs require setup in BaseTest.beforeMethod()
+================================================================================
+
+================================================================================
+FAILURE REPORT: 2026-07-02T08:43:56.439800200
+Execution Mode: Headless
+Test Class: AccessibilityTests
+Test Method: ACC_018_verifyTargetSize
+Failure Reason: Accessibility test failed: Target size check - class java.util.LinkedHashMap cannot be cast to class com.qabrains.utils.AccessibilityUtil$JSRect (java.util.LinkedHashMap is in module java.base of loader 'bootstrap'; com.qabrains.utils.AccessibilityUtil$JSRect is in unnamed module of loader 'app')
+URL: https://practice.qabrains.com/ecommerce/login
+Screenshot: D:\1. Intellij Idea\QA-Brains-Ecommerce\docs\Test Reports\failures\screenshots\AccessibilityTests-ACC_018_verifyTargetSize_2026-07-02_08-43-56-439.png
+Page Source: D:\1. Intellij Idea\QA-Brains-Ecommerce\docs\Test Reports\failures\page-source\AccessibilityTests-ACC_018_verifyTargetSize_2026-07-02_08-43-56-565.html
+Browser Info: {userAgent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/131.0.6778.33 Safari/537.36, viewport={width=1920, height=1080}, title=QA Practice Site}
+Console Logs: 
+  - Console logs require setup in BaseTest.beforeMethod()
+================================================================================
+
+================================================================================
+FAILURE REPORT: 2026-07-02T08:53:17.708074800
+Execution Mode: Headless
+Test Class: AccessibilityTests
+Test Method: ACC_001S_smokeVerifyHeadingHierarchy
+Failure Reason: Page should have exactly one H1 heading for accessibility expected [1] but found [0]
+URL: https://practice.qabrains.com/ecommerce/login
+Screenshot: D:\1. Intellij Idea\QA-Brains-Ecommerce\docs\Test Reports\failures\screenshots\AccessibilityTests-ACC_001S_smokeVerifyHeadingHierarchy_2026-07-02_08-53-17-709.png
+Page Source: D:\1. Intellij Idea\QA-Brains-Ecommerce\docs\Test Reports\failures\page-source\AccessibilityTests-ACC_001S_smokeVerifyHeadingHierarchy_2026-07-02_08-53-17-868.html
+Browser Info: {userAgent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/131.0.6778.33 Safari/537.36, viewport={width=1920, height=1080}, title=QA Practice Site}
+Console Logs: 
+  - Console logs require setup in BaseTest.beforeMethod()
+================================================================================
+
+================================================================================
+FAILURE REPORT: 2026-07-02T08:53:26.271599400
+Execution Mode: Headless
+Test Class: AccessibilityTests
+Test Method: ACC_001_verifyHeadingHierarchy
+Failure Reason: Page should have exactly one H1 heading for accessibility expected [1] but found [0]
+URL: https://practice.qabrains.com/ecommerce/login
+Screenshot: D:\1. Intellij Idea\QA-Brains-Ecommerce\docs\Test Reports\failures\screenshots\AccessibilityTests-ACC_001_verifyHeadingHierarchy_2026-07-02_08-53-26-272.png
+Page Source: D:\1. Intellij Idea\QA-Brains-Ecommerce\docs\Test Reports\failures\page-source\AccessibilityTests-ACC_001_verifyHeadingHierarchy_2026-07-02_08-53-26-423.html
+Browser Info: {userAgent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/131.0.6778.33 Safari/537.36, viewport={width=1920, height=1080}, title=QA Practice Site}
+Console Logs: 
+  - Console logs require setup in BaseTest.beforeMethod()
+================================================================================
+
+================================================================================
+FAILURE REPORT: 2026-07-02T08:53:34.478172300
+Execution Mode: Headless
+Test Class: AccessibilityTests
+Test Method: ACC_005_verifyColorNotOnlyIndicator
+Failure Reason: Error messages must use text and/or icons in addition to color expected [true] but found [false]
+URL: https://practice.qabrains.com/ecommerce/login
+Screenshot: D:\1. Intellij Idea\QA-Brains-Ecommerce\docs\Test Reports\failures\screenshots\AccessibilityTests-ACC_005_verifyColorNotOnlyIndicator_2026-07-02_08-53-34-478.png
+Page Source: D:\1. Intellij Idea\QA-Brains-Ecommerce\docs\Test Reports\failures\page-source\AccessibilityTests-ACC_005_verifyColorNotOnlyIndicator_2026-07-02_08-53-34-600.html
+Browser Info: {userAgent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/131.0.6778.33 Safari/537.36, viewport={width=1920, height=1080}, title=QA Practice Site}
+Console Logs: 
+  - Console logs require setup in BaseTest.beforeMethod()
+================================================================================
+
+================================================================================
+FAILURE REPORT: 2026-07-02T08:53:39.665918
+Execution Mode: Headless
+Test Class: AccessibilityTests
+Test Method: ACC_006_verifyLinkDescriptiveText
+Failure Reason: Links must have descriptive text, not generic 'click here' or aria-label expected [true] but found [false]
+URL: https://practice.qabrains.com/ecommerce
+Screenshot: D:\1. Intellij Idea\QA-Brains-Ecommerce\docs\Test Reports\failures\screenshots\AccessibilityTests-ACC_006_verifyLinkDescriptiveText_2026-07-02_08-53-39-666.png
+Page Source: D:\1. Intellij Idea\QA-Brains-Ecommerce\docs\Test Reports\failures\page-source\AccessibilityTests-ACC_006_verifyLinkDescriptiveText_2026-07-02_08-53-40-073.html
+Browser Info: {userAgent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/131.0.6778.33 Safari/537.36, viewport={width=1920, height=1080}, title=QA Practice Site}
+Console Logs: 
+  - Console logs require setup in BaseTest.beforeMethod()
+================================================================================
+
+================================================================================
+FAILURE REPORT: 2026-07-02T08:53:41.200863
+Execution Mode: Headless
+Test Class: AccessibilityTests
+Test Method: ACC_007_verifyButtonLabels
+Failure Reason: All buttons must have visible text label, aria-label, or title attribute expected [true] but found [false]
+URL: https://practice.qabrains.com/ecommerce/login
+Screenshot: D:\1. Intellij Idea\QA-Brains-Ecommerce\docs\Test Reports\failures\screenshots\AccessibilityTests-ACC_007_verifyButtonLabels_2026-07-02_08-53-41-200.png
+Page Source: D:\1. Intellij Idea\QA-Brains-Ecommerce\docs\Test Reports\failures\page-source\AccessibilityTests-ACC_007_verifyButtonLabels_2026-07-02_08-53-41-396.html
+Browser Info: {userAgent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/131.0.6778.33 Safari/537.36, viewport={width=1920, height=1080}, title=QA Practice Site}
+Console Logs: 
+  - Console logs require setup in BaseTest.beforeMethod()
+================================================================================
+
+================================================================================
+FAILURE REPORT: 2026-07-02T08:53:52.954387300
+Execution Mode: Headless
+Test Class: AccessibilityTests
+Test Method: ACC_018_verifyTargetSize
+Failure Reason: Accessibility test failed: Target size check - class java.util.LinkedHashMap cannot be cast to class com.qabrains.utils.AccessibilityUtil$JSRect (java.util.LinkedHashMap is in module java.base of loader 'bootstrap'; com.qabrains.utils.AccessibilityUtil$JSRect is in unnamed module of loader 'app')
+URL: https://practice.qabrains.com/ecommerce/login
+Screenshot: D:\1. Intellij Idea\QA-Brains-Ecommerce\docs\Test Reports\failures\screenshots\AccessibilityTests-ACC_018_verifyTargetSize_2026-07-02_08-53-52-954.png
+Page Source: D:\1. Intellij Idea\QA-Brains-Ecommerce\docs\Test Reports\failures\page-source\AccessibilityTests-ACC_018_verifyTargetSize_2026-07-02_08-53-53-172.html
+Browser Info: {userAgent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/131.0.6778.33 Safari/537.36, viewport={width=1920, height=1080}, title=QA Practice Site}
+Console Logs: 
+  - Console logs require setup in BaseTest.beforeMethod()
+================================================================================
+
+================================================================================
+FAILURE REPORT: 2026-07-02T08:56:27.577427
+Execution Mode: Headless
+Test Class: AccessibilityTests
+Test Method: ACC_005_verifyColorNotOnlyIndicator
+Failure Reason: Error messages must use text and/or icons in addition to color expected [true] but found [false]
+URL: https://practice.qabrains.com/ecommerce/login
+Screenshot: D:\1. Intellij Idea\QA-Brains-Ecommerce\docs\Test Reports\failures\screenshots\AccessibilityTests-ACC_005_verifyColorNotOnlyIndicator_2026-07-02_08-56-27-577.png
+Page Source: D:\1. Intellij Idea\QA-Brains-Ecommerce\docs\Test Reports\failures\page-source\AccessibilityTests-ACC_005_verifyColorNotOnlyIndicator_2026-07-02_08-56-27-737.html
+Browser Info: {userAgent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/131.0.6778.33 Safari/537.36, viewport={width=1920, height=1080}, title=QA Practice Site}
+Console Logs: 
+  - Console logs require setup in BaseTest.beforeMethod()
+================================================================================

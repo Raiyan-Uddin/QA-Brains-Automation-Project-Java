@@ -11,7 +11,8 @@
 ## Scope
 - Execute Maven/TestNG commands from the project root.
 - Execute module-specific test runs when requested.
-- For full-suite execution, use the Allure wrapper script so report generation and serving are automatic.
+- For full-suite execution, use `mvn clean test` (Windows shell command may include `chcp 65001`).
+- `mvn clean test` should refresh Allure artifacts and auto-open the latest static report in the default browser.
 - Capture and report command output, pass/fail status, and key errors.
 
 ## Responsibilities
@@ -33,7 +34,7 @@
 - Do not change project files unless explicitly instructed outside this agent scope.
 
 ## Example Commands
-- `.\allure\run-suite-with-allure.ps1`
+- `chcp 65001 | Out-Null; cd "D:\1. Intellij Idea\QA-Brains-Ecommerce"; mvn clean test`
 - `mvn "-Dtest=com.qabrains.tests.login.LoginTests" test`
 - `mvn clean test`
 

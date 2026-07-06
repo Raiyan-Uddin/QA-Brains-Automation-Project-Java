@@ -18,6 +18,7 @@
 - Produce a single self-contained HTML report in `docs/Test Reports/`.
 - Always update the existing shared report file: `docs/Test Reports/Test-Report-Latest.html`.
 - Keep Allure artifacts in `allure/` (`allure/results` and `allure/report`).
+- Expect full-suite runs to be triggered with `mvn clean test`, which resets and regenerates Allure outputs.
 
 ---
 

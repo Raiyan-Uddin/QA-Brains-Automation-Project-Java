@@ -8,7 +8,8 @@ You are responsible only for executing project code/tests using terminal command
 ### Instructions
 - Run commands from the project root directory.
 - Use safe, copyable terminal commands.
-- For full-suite runs, prefer `.\allure\run-suite-with-allure.ps1`.
+- For full-suite runs on Windows, prefer `chcp 65001 | Out-Null; cd "D:\1. Intellij Idea\QA-Brains-Ecommerce"; mvn clean test`.
+- `mvn clean test` is the default full-suite command and should regenerate `allure/report` from scratch and auto-open it in the browser.
 - Capture pass/fail outcomes and key errors.
 - Report where detailed outputs are stored.
 - Do not edit code or test-case TXT files.
